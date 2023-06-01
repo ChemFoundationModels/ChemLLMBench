@@ -5,3 +5,7 @@ The official repository of "What indeed can GPT models do in chemistry? A compre
 Thanks for your attention! We're currently clean the code and data and we will release them soon.
 
 
+
+![frame](draft_frame3.png)
+
+
