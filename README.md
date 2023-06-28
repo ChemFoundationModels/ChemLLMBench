@@ -31,6 +31,7 @@ Becuase of the size limit, please download these datasets according to the link.
 | USPTO_Mixed  | [download](https://az.app.box.com/s/7eci3nd9vy0xplqniitpk02rbg9q2zcq/folder/144882141119) |  https://github.com/MolecularAI/Chemformer     | 
 | USPTO-50k  | [download](https://az.app.box.com/s/7eci3nd9vy0xplqniitpk02rbg9q2zcq/folder/144882141119) |  https://github.com/MolecularAI/Chemformer     |
 | ChEBI-20   | [download](https://github.com/blender-nlp/MolT5/tree/main/ChEBI-20_data)  |   https://github.com/blender-nlp/MolT5   |
+| Suzuki-miyaura |[download](https://github.com/seokhokang/reaction_yield_nn/blob/main/data/dataset_2_0.npz)| https://github.com/seokhokang/reaction_yield_nn|
 
 
 ## Cite us 
