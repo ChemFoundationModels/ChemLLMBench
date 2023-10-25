@@ -1,19 +1,21 @@
-# ChemLLMBench
+<h1 align="center">  ⚛ ChemLLMBench ⚛  </h1>
 
-The official repository of **"What indeed can GPT models do in chemistry? A comprehensive benchmark on eight tasks"**. https://arxiv.org/abs/2305.18365 
-
-Thanks for your attention! We're currently cleaning the code and data and we will release them gradually. Stay tuned!
-
+The official repository of **"What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks"**. https://arxiv.org/abs/2305.18365 
 
 ![frame](draft_frame3.png)
 
+## 🆕 News
+- \[**Sep 2023**\] Our paper has been accepted to **NeurIPS 2023 Datasets and Benchmarks Track!**
+- \[**Sep 2023**\] We released the second version (v2) of our paper, we added extra LLMs **(GPT-4, GPT-3.5, Davinci-003, LLama2, Galactica)** experiments; more baselines, and more investigations on **SELFIES**, and label interpretation!
+- \[**May 2023**\] We released the first version (v1) of our paper! Very glad to share our investigations and insights about LLM in chemistry!
 
-## Tasks Overview
+
+## 💡 Tasks Overview
 ![Task_overview](task_overview.png)
 
 
 
-## Prompt
+## 📌 Prompt
 The followings are our prompt used in the paper. It's extremely easy to try your own designed prompt! Only need to change the prompt in the Jupyter code of each task and then we can see the results and performance.
 ### Zero-shot Prompt 
 ![zero_prompt](zero_shot.png)
@@ -23,7 +25,7 @@ The followings are our prompt used in the paper. It's extremely easy to try your
 ![ICL](icl.png)
 
 
-## Dataset
+## 📊 Dataset
 The datasets of some tasks are already uploaded in this repository.
 Becuase of the size limit, please download these datasets according to the link. After downloading these datasets, please move these datasets to the corresponding folder and then you can run our Jupyter code of each task.
 | Dataset  | Link  |  Reference | 
@@ -37,7 +39,7 @@ Becuase of the size limit, please download these datasets according to the link.
 | PubChem | [download](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/name_prediction/pubchem.csv) | https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/name_prediction/pubchem.csv | 
 
 
-## Cite us 
+## 🤗 Cite us 
 ```text
 @misc{guo2023gpt,
       title={What indeed can GPT models do in chemistry? A comprehensive benchmark on eight tasks}, 
