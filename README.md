@@ -1,4 +1,4 @@
-<h1 align="center">  ⚛ ChemLLMBench ⚛  </h1>
+<h1 align="center">  ⚛ [NeurIPS 2023 Datasets and Benchmarks Track] ChemLLMBench ⚛  </h1>
 
 The official repository of **"What can Large Language Models do in chemistry? A comprehensive benchmark on eight tasks"**. https://arxiv.org/abs/2305.18365 
 
