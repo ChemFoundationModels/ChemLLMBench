@@ -5,6 +5,7 @@ The official repository of **"What can Large Language Models do in chemistry? A 
 ![frame](draft_frame3.png)
 
 ## 🆕 News
+- \[**Dec 2023**\] We updated all test dataset we used and we also add prompts we used (in log format) in the folder of each task. Please see data/ folder for more details!
 - \[**Sep 2023**\] Our paper has been accepted to **NeurIPS 2023 Datasets and Benchmarks Track!**
 - \[**Sep 2023**\] We released the second version (v2) of our paper, we added extra LLMs **(GPT-4, GPT-3.5, Davinci-003, LLama2, Galactica)** experiments; more baselines, and more investigations on **SELFIES**, and label interpretation!
 - \[**May 2023**\] We released the first version (v1) of our paper! Very glad to share our investigations and insights about LLM in chemistry!
