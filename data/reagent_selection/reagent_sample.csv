@@ -1,0 +1,1801 @@
+task,candidate_rank,candidate_over_30_yield,yield_details
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+ligand: CN(C)C=O
+solvent: [OH-].[Na+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 69.56]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 17.91]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CCCCP(C12CC3CC(CC(C3)C1)C2)C12CC3CC(CC(C3)C1)C2
+solvent: C1CCOC1
+base: [OH-].[K+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Brc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","['Brc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1']","[[['Brc1ccc2ncccc2c1', 87.88]], [['Ic1ccc2ncccc2c1', 69.93]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 24.54]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+ligand: CO
+solvent: CCN(CC)CC
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 22.27]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 14.73]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CCCCP(C12CC3CC(CC(C3)C1)C2)C12CC3CC(CC(C3)C1)C2
+ligand: CO
+solvent: [OH-].[Na+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 71.17]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 64.25]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 44.78]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CCCCP(C12CC3CC(CC(C3)C1)C2)C12CC3CC(CC(C3)C1)C2
+ligand: C1CCOC1
+solvent: CCN(CC)CC
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 94.07]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 57.89]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+solvent: C1CCOC1
+base: [Li+].CC(C)(C)[O-]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 87.04]], [['Brc1ccc2ncccc2c1', 48.16]], [['Clc1ccc2ncccc2c1', 9.07]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+ligand: CN(C)C=O
+solvent: [Li+].CC(C)(C)[O-]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 45.26]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 12.91]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+solvent: CO
+base: [OH-].[Na+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","[[['Ic1ccc2ncccc2c1', 92.07]], [['Brc1ccc2ncccc2c1', 77.34]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 70.76]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1
+ligand: CC#N
+solvent: [OH-].[Na+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 41.9]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 17.6]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1Br
+ligand: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+solvent: CO
+base: [OH-].[Na+]  
+Reactants list for selection:
+F[B-](F)(F)c1ccc2ncccc2c1,CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C
+Optimal reactant:
+","['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 'F[B-](F)(F)c1ccc2ncccc2c1']","['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 'F[B-](F)(F)c1ccc2ncccc2c1']","[[['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 66.53]], [['F[B-](F)(F)c1ccc2ncccc2c1', 57.99]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)c1cc(C(C)C)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c(C(C)C)c1
+ligand: CC#N
+solvent: [OH-].[K+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 70.65]], [['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 26.63]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 12.01]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+solvent: CN(C)C=O
+base: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Brc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","[[['Ic1ccc2ncccc2c1', 80.35]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 55.64]], [['Brc1ccc2ncccc2c1', 29.96]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+solvent: C1CCOC1
+base: [OH-].[Na+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']",['Ic1ccc2ncccc2c1'],"[[['Ic1ccc2ncccc2c1', 57.17]], [['Brc1ccc2ncccc2c1', 19.77]], [['Clc1ccc2ncccc2c1', 4.69]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+solvent: C1CCOC1
+base: CCN(CC)CC  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Brc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","['Brc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","[[['Brc1ccc2ncccc2c1', 68.66]], [['Ic1ccc2ncccc2c1', 65.38]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 49.74]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CCCCP(C12CC3CC(CC(C3)C1)C2)C12CC3CC(CC(C3)C1)C2
+ligand: CC#N
+solvent: [OH-].[K+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 95.97]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 17.61]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+ligand: CN(C)C=O
+solvent: [F-].[Cs+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 82.68]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 14.73]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+ligand: CC#N
+solvent: C(=O)(O)[O-].[Na+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 68.23]], [['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 38.17]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 14.48]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1
+ligand: CN(C)C=O
+solvent: [Li+].CC(C)(C)[O-]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 33.94]], [['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 27.04]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 13.53]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1Br
+ligand: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+solvent: CO
+base: [Li+].CC(C)(C)[O-]  
+Reactants list for selection:
+F[B-](F)(F)c1ccc2ncccc2c1,CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C
+Optimal reactant:
+","['F[B-](F)(F)c1ccc2ncccc2c1', 'CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C']","['F[B-](F)(F)c1ccc2ncccc2c1', 'CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C']","[[['F[B-](F)(F)c1ccc2ncccc2c1', 71.71]], [['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 66.05]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+ligand: C1CCOC1
+solvent: CCN(CC)CC
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 73.27]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 61.14]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+solvent: CN(C)C=O
+base: [OH-].[Na+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Brc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","[[['Ic1ccc2ncccc2c1', 74.87]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 33.92]], [['Brc1ccc2ncccc2c1', 17.1]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+solvent: CO
+base: [Li+].CC(C)(C)[O-]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 89.27]], [['Brc1ccc2ncccc2c1', 69.81]], [['Clc1ccc2ncccc2c1', 23.45]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+ligand: CC#N
+solvent: CCN(CC)CC
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 15.86]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 13.21]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)c1cc(C(C)C)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c(C(C)C)c1
+ligand: CC#N
+solvent: [OH-].[Na+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 90.64]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 20.14]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+solvent: C1CCOC1
+base: [F-].[Cs+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",['Ic1ccc2ncccc2c1'],"[[['Ic1ccc2ncccc2c1', 39.87]], [['Clc1ccc2ncccc2c1', 29.94]], [['Brc1ccc2ncccc2c1', 26.67]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+ligand: C1CCOC1
+solvent: C(=O)(O)[O-].[Na+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 20.09]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 8.79]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+ligand: CC#N
+solvent: [OH-].[Na+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 15.92]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 4.02]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+solvent: CO
+base: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Ic1ccc2ncccc2c1']","[[['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 94.68]], [['Ic1ccc2ncccc2c1', 92.3]], [['Brc1ccc2ncccc2c1', 21.61]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+solvent: CC#N
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Brc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 87.18]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 40.68]], [['Brc1ccc2ncccc2c1', 33.61]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+solvent: C1CCOC1
+base: CCN(CC)CC  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']",[],"[[['Ic1ccc2ncccc2c1', 26.61]], [['Brc1ccc2ncccc2c1', 22.93]], [['Clc1ccc2ncccc2c1', 13.11]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1Br
+ligand: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+solvent: CC#N
+base: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]  
+Reactants list for selection:
+F[B-](F)(F)c1ccc2ncccc2c1,CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C
+Optimal reactant:
+","['F[B-](F)(F)c1ccc2ncccc2c1', 'CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C']",[],"[[['F[B-](F)(F)c1ccc2ncccc2c1', 0.0]], [['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 0.0]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+solvent: C1CCOC1
+base: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 48.4]], [['Brc1ccc2ncccc2c1', 36.78]], [['Clc1ccc2ncccc2c1', 18.31]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+solvent: CO
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","[[['Ic1ccc2ncccc2c1', 92.52]], [['Brc1ccc2ncccc2c1', 81.73]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 58.43]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+ligand: CN(C)C=O
+solvent: [Li+].CC(C)(C)[O-]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 57.45]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 25.71]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+ligand: C1CCOC1
+solvent: [OH-].[Na+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 22.09]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 13.24]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1Br
+ligand: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+solvent: CO
+base: [OH-].[Na+]  
+Reactants list for selection:
+F[B-](F)(F)c1ccc2ncccc2c1,CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C
+Optimal reactant:
+","['F[B-](F)(F)c1ccc2ncccc2c1', 'CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C']","['F[B-](F)(F)c1ccc2ncccc2c1', 'CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C']","[[['F[B-](F)(F)c1ccc2ncccc2c1', 57.69]], [['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 38.22]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+ligand: CN(C)C=O
+solvent: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 29.02]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 21.72]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 14.19]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1Br
+ligand: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+solvent: CN(C)C=O
+base: CCN(CC)CC  
+Reactants list for selection:
+F[B-](F)(F)c1ccc2ncccc2c1,CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C
+Optimal reactant:
+","['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 'F[B-](F)(F)c1ccc2ncccc2c1']",['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C'],"[[['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 48.4]], [['F[B-](F)(F)c1ccc2ncccc2c1', 0.0]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+ligand: CO
+solvent: [OH-].[Na+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 68.54]], [['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 47.31]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 46.32]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+solvent: CN(C)C=O
+base: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']",['Ic1ccc2ncccc2c1'],"[[['Ic1ccc2ncccc2c1', 55.43]], [['Brc1ccc2ncccc2c1', 11.81]], [['Clc1ccc2ncccc2c1', 7.24]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1
+ligand: CC#N
+solvent: C(=O)(O)[O-].[Na+]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 60.49]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 10.54]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+ligand: C1CCOC1
+solvent: [OH-].[Na+]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 92.89]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 70.55]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+ligand: CO
+solvent: [F-].[Cs+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 26.5]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 12.69]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+ligand: CN(C)C=O
+solvent: [OH-].[Na+]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 40.86]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 23.73]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+ligand: CC#N
+solvent: [F-].[Cs+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 16.64]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 16.17]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+solvent: C1CCOC1
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 51.23]], [['Brc1ccc2ncccc2c1', 40.24]], [['Clc1ccc2ncccc2c1', 18.16]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+ligand: CN(C)C=O
+solvent: [Li+].CC(C)(C)[O-]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 17.96]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 6.48]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+ligand: CC#N
+solvent: CCN(CC)CC
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 53.69]], [['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 15.39]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 13.04]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+solvent: CC#N
+base: [Li+].CC(C)(C)[O-]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Brc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","['Brc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","[[['Brc1ccc2ncccc2c1', 91.93]], [['Ic1ccc2ncccc2c1', 90.96]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 84.74]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+ligand: CN(C)C=O
+solvent: CCN(CC)CC
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 20.16]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 7.66]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+solvent: CN(C)C=O
+base: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Brc1ccc2ncccc2c1']",[],"[[['Ic1ccc2ncccc2c1', 25.46]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 7.09]], [['Brc1ccc2ncccc2c1', 1.38]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+solvent: C1CCOC1
+base: [F-].[Cs+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Brc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","['Brc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1']","[[['Brc1ccc2ncccc2c1', 74.79]], [['Ic1ccc2ncccc2c1', 63.78]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 15.15]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+ligand: CO
+solvent: [Li+].CC(C)(C)[O-]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 92.33]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 78.31]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1
+ligand: C1CCOC1
+solvent: [OH-].[Na+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 81.41]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 27.58]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+ligand: C1CCOC1
+solvent: [F-].[Cs+]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 19.11]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 19.07]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+solvent: CC#N
+base: [OH-].[K+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Clc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",[],"[[['Clc1ccc2ncccc2c1', 19.05]], [['Ic1ccc2ncccc2c1', 16.07]], [['Brc1ccc2ncccc2c1', 10.99]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1Br
+ligand: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+solvent: CN(C)C=O
+base: [Li+].CC(C)(C)[O-]  
+Reactants list for selection:
+F[B-](F)(F)c1ccc2ncccc2c1,CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C
+Optimal reactant:
+","['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 'F[B-](F)(F)c1ccc2ncccc2c1']",['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C'],"[[['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 30.26]], [['F[B-](F)(F)c1ccc2ncccc2c1', 25.37]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+solvent: C1CCOC1
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 94.23]], [['Brc1ccc2ncccc2c1', 84.05]], [['Clc1ccc2ncccc2c1', 15.63]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+ligand: C1CCOC1
+solvent: [OH-].[Na+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 17.46]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 10.92]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CCCCP(C12CC3CC(CC(C3)C1)C2)C12CC3CC(CC(C3)C1)C2
+ligand: CC#N
+solvent: CCN(CC)CC
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 94.32]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 16.37]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)c1cc(C(C)C)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c(C(C)C)c1
+ligand: CC#N
+solvent: [OH-].[K+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 81.17]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 16.16]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+ligand: CN(C)C=O
+solvent: CCN(CC)CC
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 90.81]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 14.34]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1
+solvent: CC#N
+base: [OH-].[K+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Clc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",[],"[[['Clc1ccc2ncccc2c1', 17.84]], [['Ic1ccc2ncccc2c1', 17.31]], [['Brc1ccc2ncccc2c1', 12.9]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+ligand: CN(C)C=O
+solvent: [F-].[Cs+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 73.12]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 20.36]], [['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 19.92]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+ligand: CC#N
+solvent: [OH-].[Na+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 71.35]], [['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 35.05]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 17.81]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+ligand: CC#N
+solvent: C(=O)(O)[O-].[Na+]
+base: Brc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+],Cc1ccc2c(cnn2C2CCCCO2)c1Br
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1Br']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 51.14]], [['Cc1ccc2c(cnn2C2CCCCO2)c1Br', 38.47]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 20.73]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1Br
+ligand: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+solvent: CN(C)C=O
+base: CCN(CC)CC  
+Reactants list for selection:
+F[B-](F)(F)c1ccc2ncccc2c1,CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C
+Optimal reactant:
+","['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 'F[B-](F)(F)c1ccc2ncccc2c1']",['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C'],"[[['CC1(C)OB(c2ccc3ncccc3c2)OC1(C)C', 46.73]], [['F[B-](F)(F)c1ccc2ncccc2c1', 18.63]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+solvent: CO
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 87.84]], [['Brc1ccc2ncccc2c1', 68.46]], [['Clc1ccc2ncccc2c1', 11.91]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+ligand: CN(C)C=O
+solvent: [OH-].[Na+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 22.66]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 13.32]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+solvent: CO
+base: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']",['Ic1ccc2ncccc2c1'],"[[['Ic1ccc2ncccc2c1', 78.59]], [['Brc1ccc2ncccc2c1', 28.32]], [['Clc1ccc2ncccc2c1', 21.39]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+ligand: C1CCOC1
+solvent: C(=O)(O)[O-].[Na+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 21.31]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 15.63]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+solvent: CC#N
+base: [F-].[Cs+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 71.75]], [['Brc1ccc2ncccc2c1', 60.55]], [['Clc1ccc2ncccc2c1', 16.64]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+solvent: CN(C)C=O
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",[],"[[['Ic1ccc2ncccc2c1', 15.93]], [['Clc1ccc2ncccc2c1', 15.58]], [['Brc1ccc2ncccc2c1', 13.77]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: CCCCP(C12CC3CC(CC(C3)C1)C2)C12CC3CC(CC(C3)C1)C2
+solvent: CC#N
+base: [F-].[Cs+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 88.58]], [['Brc1ccc2ncccc2c1', 57.5]], [['Clc1ccc2ncccc2c1', 15.16]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+ligand: CC#N
+solvent: CCN(CC)CC
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 96.3]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 16.0]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+solvent: C1CCOC1
+base: [OH-].[Na+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']",[],"[[['Ic1ccc2ncccc2c1', 27.16]], [['Brc1ccc2ncccc2c1', 17.7]], [['Clc1ccc2ncccc2c1', 13.24]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+ligand: CC#N
+solvent: [F-].[Cs+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 16.64]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 13.92]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+solvent: CN(C)C=O
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Clc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",[],"[[['Clc1ccc2ncccc2c1', 16.18]], [['Ic1ccc2ncccc2c1', 14.85]], [['Brc1ccc2ncccc2c1', 13.12]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+solvent: C1CCOC1
+base: [F-].[Cs+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 70.1]], [['Brc1ccc2ncccc2c1', 62.75]], [['Clc1ccc2ncccc2c1', 21.19]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+ligand: CN(C)C=O
+solvent: [Li+].CC(C)(C)[O-]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 21.36]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 20.52]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+solvent: CN(C)C=O
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Clc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",[],"[[['Clc1ccc2ncccc2c1', 21.13]], [['Ic1ccc2ncccc2c1', 14.81]], [['Brc1ccc2ncccc2c1', 13.93]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+solvent: CC#N
+base: [F-].[Cs+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 82.9]], [['Brc1ccc2ncccc2c1', 53.51]], [['Clc1ccc2ncccc2c1', 13.89]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+ligand: CC#N
+solvent: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 66.38]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 15.25]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+ligand: CN(C)C=O
+solvent: [Li+].CC(C)(C)[O-]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 67.24]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 10.49]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: CC(C)(C)P([C]1C=C[CH][C@@H]1[Fe]C1C=CC=C1P(C(C)(C)C)C(C)(C)C)C(C)(C)C
+solvent: CO
+base: [Li+].CC(C)(C)[O-]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']",['Ic1ccc2ncccc2c1'],"[[['Ic1ccc2ncccc2c1', 88.71]], [['Brc1ccc2ncccc2c1', 25.89]], [['Clc1ccc2ncccc2c1', 16.56]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1
+solvent: CC#N
+base: CCN(CC)CC  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",[],"[[['Ic1ccc2ncccc2c1', 13.25]], [['Clc1ccc2ncccc2c1', 12.68]], [['Brc1ccc2ncccc2c1', 12.48]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: c1ccc(P(c2ccccc2)c2ccccc2)cc1
+ligand: CC#N
+solvent: [F-].[Cs+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 82.9]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 19.75]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: COc1cccc(OC)c1-c1ccccc1P(C1CCCCC1)C1CCCCC1
+ligand: CC#N
+solvent: C(=O)(O)[O-].[Na+]
+base: Clc1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 76.92]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 16.08]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: C1=C[C@H]2[Fe][C@@H]1[C]2P(c1ccccc1)c1ccccc1
+ligand: CN(C)C=O
+solvent: [O-]P(=O)([O-])[O-].[K+].[K+].[K+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']","[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 39.42]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 33.22]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+ligand: CN(C)C=O
+solvent: [OH-].[K+]
+base: Ic1ccc2ncccc2c1  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 72.17]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 17.54]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+solvent: CN(C)C=O
+base: [OH-].[K+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",[],"[[['Ic1ccc2ncccc2c1', 19.09]], [['Clc1ccc2ncccc2c1', 15.78]], [['Brc1ccc2ncccc2c1', 13.04]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1
+ligand: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+solvent: CN(C)C=O
+base: [Li+].CC(C)(C)[O-]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'Clc1ccc2ncccc2c1']",['Ic1ccc2ncccc2c1'],"[[['Ic1ccc2ncccc2c1', 68.64]], [['Brc1ccc2ncccc2c1', 7.16]], [['Clc1ccc2ncccc2c1', 6.48]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+ligand: CC#N
+solvent: CCN(CC)CC
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 72.09]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 12.96]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: C1CCC(P(C2CCCCC2)C2CCCCC2)CC1
+solvent: C1CCOC1
+base: C(=O)(O)[O-].[Na+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 'Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 92.7]], [['Ic1ccc2ncccc2c1', 81.74]], [['Brc1ccc2ncccc2c1', 74.19]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1B(O)O
+ligand: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+solvent: CN(C)C=O
+base: [OH-].[K+]  
+Reactants list for selection:
+Brc1ccc2ncccc2c1,O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F,Ic1ccc2ncccc2c1
+Optimal reactant:
+","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1', 'O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F']","['Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']","[[['Ic1ccc2ncccc2c1', 49.99]], [['Brc1ccc2ncccc2c1', 49.15]], [['O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F', 27.96]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+ligand: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+solvent: CN(C)C=O
+base: [OH-].[K+]  
+Reactants list for selection:
+Ic1ccc2ncccc2c1,Brc1ccc2ncccc2c1,Clc1ccc2ncccc2c1
+Optimal reactant:
+","['Clc1ccc2ncccc2c1', 'Ic1ccc2ncccc2c1', 'Brc1ccc2ncccc2c1']",[],"[[['Clc1ccc2ncccc2c1', 18.26]], [['Ic1ccc2ncccc2c1', 17.54]], [['Brc1ccc2ncccc2c1', 15.33]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CN(C)Cc1ccc(P(C(C)(C)C)C(C)(C)C)cc1
+ligand: CC#N
+solvent: [Li+].CC(C)(C)[O-]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 93.84]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 13.76]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC(C)(C)P(C(C)(C)C)C(C)(C)C
+ligand: CO
+solvent: [OH-].[K+]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 'Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 20.76]], [['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 19.33]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: CC1(C)c2cccc(P(c3ccccc3)c3ccccc3)c2Oc2c(P(c3ccccc3)c3ccccc3)cccc21
+ligand: CC#N
+solvent: [OH-].[K+]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",[],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 17.04]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 10.42]]]"
+"You are an expert chemist. Given selected one reactant, two reagents and solvent of a Suzuki reaction, predict the optimal reactant that maximize the yield with the rest of reaction components by using your experienced chemical reactant selection knowledge. No explanations and other information. Only return the reactant smiles from the given list. Please strictly follow the format, the template are provided as follows:
+Given the rest of reaction components:
+reactant: reactant 1
+ ligand: ligand 1
+ base: base 1
+ solvent: solvent 1 
+Reactant list: reactant1,reactant2,reactant3,.etc
+Optimal reactant: reactant2 
+
+Given the rest of reaction components:
+reactant: Cc1ccccc1P(c1ccccc1C)c1ccccc1C
+ligand: CC#N
+solvent: [Li+].CC(C)(C)[O-]
+base: O=S(=O)(Oc1cnc2ccccc2c1)C(F)(F)F  
+Reactants list for selection:
+Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1,Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]
+Optimal reactant:
+","['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 'Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]']",['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1'],"[[['Cc1ccc2c(cnn2C2CCCCO2)c1B1OC(C)(C)C(C)(C)O1', 59.47]], [['Cc1ccc2c(cnn2C2CCCCO2)c1[B-](F)(F)F.[K+]', 10.11]]]"
