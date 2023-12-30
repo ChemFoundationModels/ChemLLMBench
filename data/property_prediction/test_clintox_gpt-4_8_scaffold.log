@@ -1,0 +1,3164 @@
+==============================2023-04-30 14:53:07==============================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1c(c(=O)[nH]c(=O)n1[C@H]2C[C@@H]([C@H](O2)CO)O)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(=O)[nH]c(=O)n1[C@H]2C[C@@H]([C@H](O2)CO)O)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(=O)[nH]c(=O)n1[C@H]2C[C@@H]([C@H](O2)CO)O)I
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cn(c(=O)[nH]c1=O)[C@@H]2C[C@H]([C@@H](O2)CO)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cn(c(=O)[nH]c1=O)[C@H]2C[C@@H]([C@H](O2)CO)N=[N+]=[N-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(=O)[nH]c(=O)[nH]1)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(=O)[nH]c(=O)[nH]1)N(CCCl)CCCl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=C(C(=O)NC(=O)N1)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: Cc1cn(c(=O)[nH]c1=O)[C@H]2C=C[C@H](O2)CO
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(c(cc1c2ccc(cc2F)F)C(=O)[O-])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(c1ccc(c(c1)F)c2ccccc2)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCOC1=CC=C(C=C1)C2=CC(=CN2C3=CC=C(C=C3)S(=O)(=O)N)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC(C)n1c2ccccc2c(c1/C=C/[C@@H](C[C@@H](CC(=O)[O-])O)O)c3ccc(cc3)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)c1c(c(nc(n1)N(C)S(=O)(=O)C)c2ccc(cc2)F)/C=C/[C@H](C[C@H](CC(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)c2c(oc(n2)CCC(=O)[O-])c3ccccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c(no1)c2ccccc2)c3ccc(cc3)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccc(cc1)c2c(n3cc(ccc3n2)C)CC(=O)N(C)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+==============================2023-04-30 15:09:36==============================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCN(C)C(=O)Oc1cccc(c1)[C@H](C)[NH+](C)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C1[C@@H]([C@H](O[C@H]1N2C=NC(=NC2=O)N)CO)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1nc(nc(=O)n1[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc(nc(=O)n1[C@H]2C[C@@H]([C@H](O2)CO)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc(c2c(n1)n(cn2)[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)F)N=C(N=C2N)Cl
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N=C(N=C2N)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)COP(=O)(O)O)O)O)N=C(N=C2N)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1nc(nn1[C@H]2[C@@H]([C@@H]([C@H](O2)CO)O)O)C(=O)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-]S(=O)(=O)[O-]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(cc(c1)[131I])C[NH+]=C(N)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C(CC(C(F)F)(C(=O)[O-])[NH3+])C[NH3+]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1ccc2c(c1)N(c3cc(ccc3S2)C(F)(F)F)CCCN4CC[NH+](CC4)CCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)N(c3cc(ccc3S2)Cl)CCCN4CC[NH+](CC4)CCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCN(CC1)CCCN2c3ccccc3Sc4c2cc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)c1ccc2c(c1)N(c3ccccc3S2)CCCN4CC[NH+](CC4)CCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCSc1ccc2c(c1)N(c3ccccc3S2)CCCN4CC[NH+](CC4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCCCC1CCN2c3ccccc3Sc4c2cc(cc4)S(=O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCCCC1CCN2c3ccccc3Sc4c2cc(cc4)SC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCN(CC1)CC/C=C\2/c3ccccc3Sc4c2cc(cc4)S(=O)(=O)N(C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCN(CC1)CCCN2c3ccccc3Sc4c2cc(cc4)C(F)(F)F
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@H]1C[NH+](CC[C@@]1(C)c2cccc(c2)O)C[C@H](Cc3ccccc3)C(=O)NCC(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(=O)N(c1ccccc1)C2CC[NH+](CC2)CCc3ccccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1C(=O)CCC[NH+]2CCC(CC2)(c3ccc(cc3)Cl)O)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C2(CC[NH+](CC2)CCC(C#N)(c3ccccc3)c4ccccc4)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)C1(CC[NH+](CC1)CCC(C#N)(c2ccccc2)c3ccccc3)c4ccccc4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN(C)C(=O)C(CC[NH+]1CCC(CC1)(c2ccc(cc2)Cl)O)(c3ccccc3)c4ccccc4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)COCC(CN(Cc1ccccc1)c2ccccc2)[NH+]3CCCC3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(=O)O[C@@](Cc1ccccc1)(c2ccccc2)[C@@H](C)C[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)C1(CC[NH+](CC1)CCc2ccc(cc2)N)c3ccccc3
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@]1(c2cccc(c2C(=O)C3=C([C@]4([C@@H](C[C@@H]31)[C@@H](C(=C(C4=O)C(=O)N)[O-])[NH+](C)C)O)[O-])[O-])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H]1c2cccc(c2C(=O)C3=C([C@]4([C@@H]([C@H]([C@H]13)O)[C@@H](C(=C(C4=O)C(=O)N)[O-])[NH+](C)C)O)[O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)[C@H]1[C@@H]2C[C@@H]3[C@@H](c4c(ccc(c4C(=O)C3=C([C@@]2(C(=O)C(=C1[O-])C(=O)N)O)[O-])[O-])Cl)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)[NH2+]CC(=O)Nc1cc(c2c(c1[O-])C(=O)C3=C([C@]4([C@@H](C[C@@H]3C2)[C@@H](C(=C(C4=O)C(=O)N)[O-])[NH+](C)C)O)[O-])N(C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)[C@H]1[C@@H]2[C@H]([C@@H]3C(=C)c4cccc(c4C(=O)C3=C([C@@]2(C(=O)C(=C1[O-])C(=O)N)O)[O-])[O-])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2c(cc1)C(=O)C(=C(C2=O)[C@H]3CC[C@@H](CC3)c4ccc(cc4)Cl)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCc2cccc-3c2[C@H]1Cc4c3c(c(cc4)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)N[C@H]1CCc2cc(c(c(c2-c3c1cc(=O)c(cc3)OC)OC)OC)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]1(c2cccc(c2C(=O)C3=C([C@]4([C@@H]([C@H]([C@@H]31)O)[C@@H](C(=C(C4=O)C(=O)N)[O-])[NH+](C)C)O)[O-])[O-])O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)NCc1c(c(c(c(c1I)NC(=O)C)I)C(=O)[O-])I
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: Cc1c(ccnc1C[S@@](=O)c2[nH]c3ccccc3n2)OCC(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(ccnc1CS(=O)c2[nH]c3ccccc3n2)OCC(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cnc(c(c1OC)C)CS(=O)c2[nH]c3cc(ccc3n2)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1ccnc(c1OC)CS(=O)c2[nH]c3cc(ccc3n2)OC(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CC[C@@H](c1ccc(cc1)Br)c2ccccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCC(c1ccc(cc1)Br)c2ccccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCC(c1ccc(cc1)Cl)c2ccccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCC(c1ccccc1)c2ccccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(ccnc1CS(=O)c2[nH]c3ccccc3n2)OCCCOC
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(c(cc1Cl)Cl)COC(Cn2ccnc2)c3ccc(cc3Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1CSC(Cn2ccnc2)c3ccc(cc3Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2c(csc2c(c1)Cl)COC(Cn3ccnc3)c4ccc(cc4Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1Cl)Cl)C(Cn2ccnc2)OCc3ccsc3Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)SC(CCc2ccc(cc2)Cl)Cn3ccnc3)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1Cl)Cl)CO/N=C(/Cn2ccnc2)\c3ccc(cc3Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)COc2ccc(cc2)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH2+]CCC(c1ccccc1)Oc2ccc(cc2)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1COC(Cn2ccnc2)c3ccc(cc3Cl)Cl)Cl
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1[C@H]([C@@H](CO)NC(=O)[C-](Cl)Cl)O)[N+](=O)[O-]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1ccc(cc1)CN(CC2=[NH+]CCN2)c3ccccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)cccc2CC3=[NH+]CCN3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)CC2=[NH+]CCN2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cc(c(c(c1CC2=[NH+]CCN2)C)O)C(C)(C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(c(c(c1Cl)Cl)Cc2c(c(cc(c2Cl)Cl)Cl)O)O)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)C(c2ccc(cc2)Cl)C(Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)[S@](=O)CC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)S(=O)CC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccc(cc1)N(CC2=[NH+]CCN2)c3cccc(c3)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@@H]1OC[C@@H]2[C@@H](O1)[C@@H]([C@H]([C@@H](O2)O[C@@H]3c4cc5c(cc4[C@H]([C@@H]6[C@@H]3COC6=O)c7cc(c(c(c7)OC)O)OC)OCO5)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1OC[C@@H]2[C@@H](O1)[C@@H]([C@H]([C@@H](O2)O[C@H]3[C@H]4COC(=O)[C@@H]4[C@@H](C5=CC6=C(C=C35)OCO6)C7=CC(=C(C(=C7)OC)O)OC)O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: COc1cc(cc(c1OC)OC)[C@@H]2c3cc4c(cc3[C@@H]([C@@H]5[C@@H]2C(=O)OC5)O)OCO4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1[C@@H]2CC[NH2+]C[C@H]2COc3ccc4c(c3)OCO4)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2c(cc1)C(=O)C(=C(C2=O)[C@H]3CC[C@@H](CC3)c4ccc(cc4)Cl)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1CC(=O)N2[C@@H](C1=O)Cc3c4ccccc4[nH]c3[C@H]2c5ccc6c(c5)OCO6
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C2[C@H](C(=O)[C@@]3([C@H](C[C@@H]4[C@]([C@H]3[C@@H]([C@@](C2(C)C)(C[C@@H]1OC(=O)[C@@H]([C@H](C5=CC=CC=C5)NC(=O)OC(C)(C)C)O)O)OC(=O)C6=CC=CC=C6)(CO4)OC(=O)C)O)C)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC1=C2[C@H](C(=O)[C@@]3([C@H](C[C@@H]4[C@]([C@H]3[C@@H]([C@@](C2(C)C)(C[C@@H]1OC(=O)[C@@H]([C@H](c5ccccc5)NC(=O)OC(C)(C)C)O)O)OC(=O)c6ccccc6)(CO4)OC(=O)C)OC)C)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1cc(cc(c1O)OC)[C@@H]2c3cc4c(cc3[C@H]([C@@H]5[C@@H]2C(=O)OC5)O[C@H]6[C@@H]([C@H]([C@H]7[C@H](O6)COC(O7)c8cccs8)O)O)OCO4
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@H]1C(=O)COC(=O)C(C)(C)C)C)O)Cl)C)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@H]3[C@H](C[C@@]2([C@]1(C(=O)COC(=O)C)O)C)O)C)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)CO)O)C)O)F)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COP(=O)([O-])[O-])O)C)O)F)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@H]1C(=O)CO)C)O)F)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1CC[C@@]2(C(=O)CO)O)C[C@@H](C4=CC(=O)C=C[C@]34C)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(=O)O[C@@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)C)C(=O)CCl
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCCCCOc1ccc(cc1)c2cc(no2)c3ccc(cc3)C(=O)N[C@H]4C[C@H]([C@H](NC(=O)[C@@H]5[C@H]([C@H](CN5C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]6C[C@H](CN6C(=O)[C@@H](NC4=O)[C@@H](C)O)O)[C@@H]([C@H](c7ccc(c(c7)OS(=O)(=O)[O-])O)O)O)[C@@H](CC(=O)N)O)C)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@@H]1C(=O)N2CCC[C@H]2C(=O)N([C@H](C(=O)N3CC(C(=O)CC3C(=O)N[C@H](C(=O)O[C@@H]([C@@H](C(=O)N1)NC(=O)c4c(cccn4)O)C)c5ccccc5)CS[C@@H]6C[NH+]7CCC6CC7)Cc8ccc(cc8)N(C)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H]([C@@H](C(=O)N)NC(=O)[C@@H]1CSSC[C@@H](C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)C(C)C)CCCC[NH3+])Cc2c[nH]c3c2cccc3)Cc4ccc(cc4)O)NC(=O)[C@@H](Cc5ccc6ccccc6c5)[NH3+])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C1C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCC[NH3+])Cc2c[nH]c3c2cccc3)Cc4ccccc4)NC(=O)C(Cc5ccccc5)[NH3+])C(=O)NC(CO)C(C)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccc(c2c1oc-3c(c(=O)c(c(c3n2)C(=O)NC4C(OC(=O)C(N(C(=O)CN(C(=O)C5CCCN5C(=O)C(NC4=O)C(C)C)C)C)C(C)C)C)N)C)C(=O)NC6C(OC(=O)C(N(C(=O)CN(C(=O)C7CCCN7C(=O)C(NC6=O)C(C)C)C)C)C(C)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C[C@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](CSSCCC(=O)N[C@H](C(=O)N2)Cc3ccc(cc3)O)C(=O)N4CCC[C@H]4C(=O)N[C@H](CCCNC(=[NH2+])N)C(=O)NCC(=O)N)CC(=O)N)CCC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)CC2C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)N2)Cc3ccc(cc3)O)[NH3+])C(=O)N4CCCC4C(=O)NC(CCC[NH+]=C(N)N)C(=O)NCC(=O)N)CC(=O)N)CCC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)CC2C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)N2)Cc3ccc(cc3)O)[NH3+])C(=O)N4CCCC4C(=O)NC(CCCC[NH3+])C(=O)NCC(=O)N)CC(=O)N)CCC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCOc1ccc(cc1)c2ccc(cc2)c3ccc(cc3)C(=O)N[C@H]4C[C@H]([C@H](NC(=O)[C@@H]5[C@H]([C@H](CN5C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]6C[C@H](CN6C(=O)[C@@H](NC4=O)[C@@H](C)O)O)[C@@H]([C@H](c7ccc(cc7)O)O)O)[C@@H](C)O)C)O)O)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(c(c(c1)C(=O)c2ccc(cc2)Br)N)CC(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(=O)c2cccc(c2N)CC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C(=O)[O-])Oc1ccc(cc1)C(=O)c2ccc(cc2)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C(=O)NCCS(=O)(=O)[O-])Oc1ccc(cc1)C(=O)c2ccc(cc2)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)OC(=O)C(C)(C)Oc1ccc(cc1)C(=O)c2ccc(cc2)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(c1cccc(c1)C(=O)c2ccccc2)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccc(cc1)C(=O)c2cc(c(c(c2)O)[O-])[N+](=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCC(CC)COC(=O)C(=C(c1ccccc1)c2ccccc2)C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[N+]1(CCC(=C(c2ccccc2)c3ccccc3)CC1)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@]2([C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CCl)C)O)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)C[C@@H](C5=CC(=O)C=C[C@@]53C)F)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@@]53C)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)COC(=O)CC(C)(C)C)CCC5=CC(=O)C=C[C@@]53C)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)C[C@@H](C5=CC(=O)C=C[C@]35C)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@]35C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)OCC(=O)[C@@]12[C@@H](C[C@@H]3[C@@]1(C[C@@H]([C@]4([C@H]3C[C@@H](C5=CC(=O)C=C[C@@]54C)F)F)O)C)OC(O2)(C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC1O[C@@H]2C[C@H]3[C@@H]4CCC5=CC(=O)C=C[C@@]5([C@H]4[C@H](C[C@@]3([C@@]2(O1)C(=O)CO)C)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CCC(=O)C=C1[C@H](C[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CO)C)O)F
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: Cc1c(nc[nH]1)CN2CCc3c(c4ccccc4n3C)C2=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)c1cncn1C(C)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)c3c([nH]2)CN(CC3)C(=O)CCS
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH2+][C@@H]1CCc2c(c3cc(ccc3[nH]2)C(=O)N)C1
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCc1cccc2c1[nH]c3c2CCOC3(CC)CC(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2c(csc2c(c1)Cl)COC(Cn3ccnc3)c4ccc(cc4Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCc1cc2c(cc1CC)CC(C2)[NH2+]C[C@@H](c3ccc(c4c3ccc(=O)[nH]4)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)c1ccc2c(c1)c(=O)c3cc(c(nc3o2)N)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1nccn1CC2CCc3c(c4ccccc4n3C)C2=O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCCCCCCCCCC(=O)OC[C@H](COP(=O)([O-])OCC[N+](C)(C)C)OC(=O)CCCCCCCCCCCCC
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)[N-]S(=O)(=O)c1ccc(cc1)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCC1(CCC(=O)NC1=O)c2ccc(cc2)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC1(CCC(=O)NC1=O)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1(CC(=O)N(C1=O)C)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1C(=O)CC(C1=O)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC1(C(=O)NC(=O)CS1)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC1(C(=O)N(C(=O)N1)C)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCN1C(=O)C(NC1=O)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH2+]C1(CCCCC1=O)c2ccccc2Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1C(S(=O)(=O)CCC1=O)c2ccc(cc2)Cl
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CO[Si](C)(C)O[Si](C)(C)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCCCCCC(=O)OCCN1CC[NH+](CC1)CCCN2c3ccccc3Sc4c2cc(cc4)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1CC[NH+](CC1)CCCN2c3ccccc3Sc4c2cc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)c1ccc2c(c1)N(c3ccccc3S2)CCC[NH+]4CCC(CC4)CCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)N(c3cc(ccc3S2)C(F)(F)F)CCCN4CC[NH+](CC4)CCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)N(c3cc(ccc3S2)Cl)CCCN4CC[NH+](CC4)CCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCN(CC1)CCCN2c3ccccc3Sc4c2cc(cc4)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCN(CC1)CCCN2c3ccccc3Sc4c2cc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)c1ccc2c(c1)N(c3ccccc3S2)CCCN4CC[NH+](CC4)CCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCCCCCC(=O)OCCN1CC[NH+](CC1)CCCN2c3ccccc3Sc4c2cc(cc4)C(F)(F)F
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCCCC[C@@H](/C=C/[C@H]1[C@@H](CC(=O)[C@@H]1C/C=C\CCCC(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCC[C@@H](/C=C/[C@H]1[C@@H](CC(=O)[C@@H]1CCCCCCC(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C([C@@H]1[C@H]([C@@H]([C@H](C(=O)O1)O)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC[NH2+][C@H]1CCc2c(sc(n2)N)C1
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@@H](C(=O)N)N1CCCC1=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C=CN1CCCC1=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)[NH2+]CC(COc1cccc2c1C[C@@H]([C@@H](C2)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1CC(C1)(C(=O)O)C(=O)O.N.N.[Pt]
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCCCC(C)(C/C=C/[C@H]1[C@@H](CC(=O)[C@@H]1CCCCCCC(=O)OC)O)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1c(c(c(c(c1Cl)Cl)Cc2c(c(cc(c2Cl)Cl)Cl)O)O)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)C(c2ccc(cc2)Cl)C(Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)[S@](=O)CC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)S(=O)CC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCC(c1ccccc1)(c2ccccc2Cl)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCOC(c1ccccc1)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)C(=O)Oc1ccc(cc1[C@H](CC[NH+](C(C)C)C(C)C)c2ccccc2)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccc(c(c1)[C@H](CC[NH+](C(C)C)C(C)C)c2ccccc2)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[N+](C)(CCC(c1ccccc1)(c2ccccc2)C(=O)N)C(C)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC(C1C(=O)NC(CSSCC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCC[NH3+])Cc2c[nH]c3c2cccc3)Cc4ccccc4)NC(=O)C(Cc5ccccc5)[NH3+])C(=O)NC(CO)C(C)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C[C@H]2C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](CSSCCC(=O)N[C@H](C(=O)N2)Cc3ccc(cc3)O)C(=O)N4CCC[C@H]4C(=O)N[C@H](CCCNC(=[NH2+])N)C(=O)NCC(=O)N)CC(=O)N)CCC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)CC2C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)N2)Cc3ccc(cc3)O)[NH3+])C(=O)N4CCCC4C(=O)NC(CCC[NH+]=C(N)N)C(=O)NCC(=O)N)CC(=O)N)CCC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)CC2C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)N2)Cc3ccc(cc3)O)[NH3+])C(=O)N4CCCC4C(=O)NC(CCCC[NH3+])C(=O)NCC(=O)N)CC(=O)N)CCC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@H](C)[C@H]1C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](CSSC[C@@H](C(=O)N[C@H](C(=O)N1)Cc2ccc(cc2)O)[NH3+])C(=O)N3CCC[C@H]3C(=O)N[C@@H](CC(C)C)C(=O)NCC(=O)N)CC(=O)N)CCC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(CSSCC(C(=O)NC(C(=O)N1)Cc2ccc(cc2)O)[NH3+])C(=O)N3CCCC3C(=O)NC(CC(C)C)C(=O)NCC(=O)N)CC(=O)N)C(C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCOc1ccc(cc1)c2ccc(cc2)c3ccc(cc3)C(=O)N[C@H]4C[C@H]([C@H](NC(=O)[C@@H]5[C@H]([C@H](CN5C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]6C[C@H](CN6C(=O)[C@@H](NC4=O)[C@@H](C)O)O)[C@@H]([C@H](c7ccc(cc7)O)O)O)[C@@H](C)O)C)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCOc1ccc(cc1)c2cc(no2)c3ccc(cc3)C(=O)N[C@H]4C[C@H]([C@H](NC(=O)[C@@H]5[C@H]([C@H](CN5C(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H]6C[C@H](CN6C(=O)[C@@H](NC4=O)[C@@H](C)O)O)[C@@H]([C@H](c7ccc(c(c7)OS(=O)(=O)[O-])O)O)O)[C@@H](CC(=O)N)O)C)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H]([C@@H](C(=O)N)NC(=O)[C@@H]1CSSC[C@@H](C(=O)N[C@H](C(=O)N[C@@H](C(=O)N[C@H](C(=O)N[C@H](C(=O)N1)C(C)C)CCCC[NH3+])Cc2c[nH]c3c2cccc3)Cc4ccc(cc4)O)NC(=O)[C@@H](Cc5ccc6ccccc6c5)[NH3+])O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC(=O)NC[C@H]1CN(C(=O)O1)c2ccc(c(c2)F)N3CCOCC3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c([n+](c(nc1N2CCCCC2)N)[O-])N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)F)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCP(=[Au]S[C@H]1[C@@H]([C@H]([C@@H]([C@H](O1)COC(=O)C)OC(=O)C)OC(=O)C)OC(=O)C)(CC)CC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN(C(=O)N[C@@H]1[C@H]([C@@H]([C@H](O[C@@H]1O)CO)O)O)N=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)OCCCN4CCOCC4
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCn1cc(c(=O)c2c1nc(c(c2)F)N3CC[NH2+]CC3)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1C(O1)CCl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)[NH2+]C[C@@H](COc1c(nsn1)N2CCOCC2)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)c3c(cccc3OC)OC)C(=O)[O-])C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c(no1)c2c(cccc2Cl)Cl)C(=O)N[C@H]3[C@@H]4N(C3=O)[C@H](C(S4)(C)C)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c(no1)c2ccccc2)C(=O)N[C@H]3[C@@H]4N(C3=O)[C@H](C(S4)(C)C)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c(no1)c2ccccc2Cl)C(=O)N[C@H]3[C@@H]4N(C3=O)[C@H](C(S4)(C)C)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](c3ccc(cc3)O)[NH3+])C(=O)[O-])C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](c3ccccc3)[NH3+])C(=O)[O-])C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)C(c3ccccc3)C(=O)[O-])C(=O)[O-])C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)[O-])C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOc1ccc2ccccc2c1C(=O)N[C@H]3[C@@H]4N(C3=O)[C@H](C(S4)(C)C)C(=O)[O-]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[N+]1(CCc2cc(c3cc2[C@@H]1Cc4ccc(cc4)Oc5c6c(cc(c5OC)OC)CC[N+]([C@@H]6Cc7ccc(c(c7)O3)OC)(C)C)OC)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCc2cccc-3c2[C@H]1Cc4c3c(c(cc4)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H]1[C@H]([C@@](C[C@@H](O1)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2Oc3c4cc5cc3Oc6ccc(cc6Cl)[C@H]([C@H](C(=O)N[C@H](C(=O)N[C@H]5C(=O)N[C@@H]7c8ccc(c(c8)-c9c(cc(cc9O)O)[C@H](NC(=O)[C@H]([C@@H](c1ccc(c(c1)Cl)O4)O)NC7=O)C(=O)[O-])O)CC(=O)N)NC(=O)[C@@H](CC(C)C)[NH2+]C)O)CO)O)O)(C)[NH3+])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCCCCCCNCC[NH2+][C@]1(C[C@@H](O[C@H]([C@H]1O)C)O[C@@H]2[C@H]([C@@H]([C@H](O[C@H]2Oc3c4cc5cc3Oc6ccc(cc6Cl)[C@H]([C@H](C(=O)N[C@H](C(=O)N[C@H]5C(=O)N[C@@H]7c8ccc(c(c8)-c9c(cc(c(c9O)C[NH2+]CP(=O)([O-])[O-])O)[C@H](NC(=O)[C@H]([C@@H](c1ccc(c(c1)Cl)O4)O)NC7=O)C(=O)[O-])O)CC(=O)N)NC(=O)[C@@H](CC(C)C)[NH2+]C)O)CO)O)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)([C@@H]3CC[NH+](C3)CCc4ccc5c(c4)CCO5)C(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1C2C[NH2+]CCc3c2cc(c(c3Cl)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccc(cc1Nc2nccc(n2)c3cccnc3)NC(=O)c4ccc(cc4)CN5CC[NH+](CC5)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1ccc(cc1C23CC4CC(C2)CC(C4)C3)c5ccc6cc(ccc6c5)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCc2cc(c3cc2[C@@H]1Cc4ccc(cc4)Oc5c6c(cc(c5O)OC)CC[N+]([C@@H]6Cc7ccc(c(c7)O3)O)(C)C)OC
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C1C(N(C2=C(N1)NC(=NC2=O)N)C=O)CNC3=CC=C(C=C3)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-].[Ca+2]
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1C(N(C2=C(N1)NC(=NC2=O)N)C=O)CNC3=CC=C(C=C3)C(=O)N[C@@H](CCC(=O)O)C(=O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1cc(ccc1C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])NC[C@H]2CNc3c(c(=O)nc([nH]3)N)N2C=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])NCC2CNc3c(c(=O)nc([nH]3)N)N2C=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-])NCc2cnc3c(n2)c(=O)nc([nH]3)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1CCc2c[nH]c3c2c(=O)nc([nH]3)N)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=CC(=CC=C1CCC2=CNC3=C2C(=O)N=C(N3)N)C(=O)N[C@@H](CCC(=O)O)C(=O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C[C@@H]([C@@H]([C@H]1CNc2c(c(=O)nc([nH]2)N)N1)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1c2c([nH]c(nc2=O)N)NC[C@@H]1CNc3ccc(cc3)C(=O)N[C@@H](CCC(=O)[O-])C(=O)[O-]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@H]1C(=O)COC(=O)C(C)(C)C)C)O)Cl)C)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@H]3[C@H](C[C@@]2([C@]1(C(=O)COC(=O)C)O)C)O)C)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)CO)O)C)O)F)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COP(=O)([O-])[O-])O)C)O)F)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@H]1C(=O)CO)C)O)F)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1CC[C@@]2(C(=O)CO)O)CCC4=CC(=O)C=C[C@]34C)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1CC[C@@]2(C(=O)CO)O)C[C@@H](C4=CC(=O)C=C[C@]34C)F)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC(C)(COC(=O)N)COC(=O)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[N+](C)(C)c1cccc(c1)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1CC[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(Cc1ccccc1)[NH3+]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(=O)O[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CC[C@@H]4[C@@]3(C[C@H](C(=O)C4)C)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C)O)CC[C@@H]4[C@@]3(COC(=O)C4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C)O)CC[C@@H]4[C@@]3(C/C(=C/[O-])/C(=O)C4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C)O)CC[C@@H]4[C@@]3(Cc5cn[nH]c5C4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)O[C@H]1CC[C@@H]2[C@H]3CC[C@]4([C@H]([C@@H]3CCC2=C1)CC[C@]4(C#C)OC(=O)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@@]1(CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2CCC4=CCCC[C@H]34)C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2C(=O)NC(C)(C)C)CC[C@@H]4[C@@]3(C=CC(=O)N4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2[C@@H](C[C@H]4[C@@]3(CC[C@H](C4)O)C)O)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cc(c(c(c1NC(=O)C[NH+](CC(=O)[O-])CC(=O)[O-])C)Br)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC(CCc1ccccc1)[NH2+]CC(c2ccc(c(c2)C(=O)N)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1CCCC[NH2+]C[C@@H](c2ccc(c(c2)O)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)C(CCC[NH+](C)CCc1ccc(c(c1)OC)OC)(C#N)c2ccc(c(c2)OC)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]([C@@H](c1ccc(cc1)O)O)[NH2+]CCc2ccc(cc2)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](Cc1ccc(cc1)OC)[NH2+]C[C@@H](c2ccc(c(c2)NC=O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(Cc1ccc(cc1)OC)[NH2+]CC(c2ccc(c(c2)NC=O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](Cc1ccc(c(c1)O)O)[C@@H](C)Cc2ccc(c(c2)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(Cc1ccccc1)[NH+](C)Cc2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(CCc1ccc(cc1)O)[NH2+]CCc2ccc(c(c2)O)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC(=O)N1CCN(CC1)C2=CC=C(C=C2)OC[C@H]3CO[C@](O3)(CN4C=CN=C4)C5=C(C=C(C=C5)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC(=O)N1CCN(CC1)c2ccc(cc2)OC[C@H]3CO[C@](O3)(Cn4ccnc4)c5ccc(cc5Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(C)n1c(=O)n(cn1)c2ccc(cc2)N3CCN(CC3)c4ccc(cc4)OC[C@H]5CO[C@](O5)(Cn6cncn6)c7ccc(cc7Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@@H]([C@H](C)O)n1c(=O)n(cn1)c2ccc(cc2)N3CCN(CC3)c4ccc(cc4)OC[C@H]5C[C@](OC5)(Cn6cncn6)c7ccc(cc7F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCC(CC1)COc2cc3c(cc2OC)c(ncn3)Nc4ccc(cc4F)Br
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCc1nn(c(=O)n1CCOc2ccccc2)CCC[NH+]3CCN(CC3)c4cccc(c4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)[NH+]=C(c3cc(ccc3O2)Cl)N4CC[NH2+]CC4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCN(CC1)C2=[NH+]c3ccccc3Oc4c2cc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[NH+]1CCN(CC1)c2ccc(cc2)OC[C@H]3CO[C@](O3)(Cn4cncn4)c5ccc(cc5Cl)Cl
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C([C@H]([C@H]([C@@H]([C@H](C(=O)[O-])O)O)O)O)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[NH+](C)CCc1c[nH]c2c1cc(cc2)C[C@H]3COC(=O)N3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCc1c[nH]c2c1cc(cc2)Cn3cncn3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)CNCC1=CC=C(C=C1)C2=CC=CC=C2S(=O)(=O)N3CCCC3
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCn1cc(c(=O)c2c1c(c(c(c2)F)N3CC[NH2+]C(C3)C)F)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCn1cc(c(=O)c2c1cc(c(c2)F)N3CC[NH2+]CC3)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[NH2+]CC(COc1cccc2c1cc[nH]2)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCNC(=[NH2+])N/N=C/c1c[nH]c2c1cc(cc2)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CNS(=O)(=O)Cc1ccc2c(c1)c(c[nH]2)CC[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCc1c[nH]c2c1cc(cc2)CS(=O)(=O)N3CCCC3
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCNC(=O)[N-]S(=O)(=O)c1ccc(cc1)Cl
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[NH+]1C2CC(CC1C3C2O3)OC(=O)C(CO)c4ccccc4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[N+]1(C2CCC1CC(C2)OC(=O)C(c3ccccc3)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1[C@@H]2CC[C@H]1C[C@H](C2)OC(=O)C(CO)c3ccccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[N+]1([C@@H]2CC[C@@H]1CC(C2)OC(=O)C(CO)c3ccccc3)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[N+]1([C@@H]2CC(C[C@H]1[C@H]3[C@@H]2O3)OC(=O)C(c4cccs4)(c5cccs5)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1(C([NH2+]C(S1)C(C(=O)NCCCCCC(=O)[O-])NC(=O)Cc2ccccc2)C(=O)[O-])C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](c3ccc(cc3)O)[NH3+])C(=O)[O-])C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)[C@@H](c3ccccc3)[NH3+])C(=O)[O-])C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1[C@@H]2C[C@H](C[C@H]1[C@H]3[C@@H]2O3)OC(=O)[C@H](CO)c4ccccc4
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCC[C@@H]1C[C@H]([NH+](C1)C)C(=O)NC([C@@H]2[C@@H]([C@@H]([C@H]([C@H](O2)SC)O)O)O)C(C)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCCCCCCCCCCCC(=O)O[C@@H]1[C@H]([C@H]([C@H](O[C@@H]1SC)C(C(C)Cl)NC(=O)[C@@H]2C[C@H](C[NH+]2C)CCC)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C([C@@H]1[C@H]([C@@H]([C@H]([C@@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)OS(=O)(=O)O[Al](O)O)OS(=O)(=O)O[Al](O)O)OS(=O)(=O)O[Al](O)O)COS(=O)(=O)O[Al](O)O)OS(=O)(=O)O[Al](O)O)OS(=O)(=O)O[Al](O)O)OS(=O)(=O)O[Al](O)O)OS(=O)(=O)O[Al](O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@]2([C@H]([C@@H]([C@H](O2)CO)O)O)CO)O)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cccc(c1NC(=O)C2CCCC[NH+]2C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC[NH+]1CCCC[C@H]1C(=O)Nc2c(cccc2C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC[NH+]1CCCC[C@H]1C(=O)Nc2c(cccc2C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC[NH+]1CCCCC1C(=O)Nc2c(cccc2C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC[C@@H]1C[C@H]([NH+](C1)C)C(=O)N[C@@H]([C@@H]2[C@@H]([C@@H]([C@H]([C@H](O2)SC)O)O)O)[C@@H](C)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[NH+](C)CCCN1c2ccccc2CCc3c1cc(cc3)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCCN1c2ccccc2CCc3c1cccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH2+]CCCN1c2ccccc2CCc3c1cccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(CN1c2ccccc2CCc3c1cccc3)C[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)O[C@H]1CC2=CC=CC=C2N(C3=CC=CC=C13)C(=O)N
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1ccc(c(c1)C2=NC(C(=O)Nc3c2cc(cc3)Cl)O)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)C2=NCC(=O)Nc3c2cc(cc3)[N+](=O)[O-])Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C2=NC(C(=O)Nc3c2cc(cc3)Cl)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)CC(=O)c3ccccc3N2C(=O)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1[nH]c(=O)c2c(n1)n(cn2)[C@H]3CC[C@H](O3)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc2c(=O)[nH]c(nc2n1COC(CO)CO)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[C@@H](C(=O)OCCOCn1cnc2c1nc([nH]c2=O)N)[NH3+]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc2c(nc(nc2n1[C@@H]3C[C@@H](C=C3)CO)N)NC4CC4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc(c2c(n1)n(cn2)[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)F)N=C(N=C2N)Cl
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N=C(N=C2N)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C=C1[C@H](C[C@@H]([C@H]1CO)O)n2cnc3c2nc([nH]c3=O)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC(=O)c1ccc(cc1)S(=O)(=O)[N-]C(=O)NC2CCCCC2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCOc1ccc(cc1)C(=O)CC[NH+]2CCCCC2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1ccc(cc1C(=O)NCCc2ccc(cc2)S(=O)(=O)[N-]C(=O)NC3CCCCC3)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(CC[NH+]2CCCCC2)(C3CCCCC3)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(CC[NH+]2CCCC2)(C3CCCCC3)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(CC[NH+]2CCCCC2)(C3CCCC3)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC([C@H]1CC[C@@H](CC1)C(=O)N[C@@H](C(=O)[O-])Cc2ccccc2)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(noc1[N-]S(=O)(=O)c2ccc(cc2)N)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccc(cc1)S(=O)(=O)[N-]C(=O)N[NH+]2CCCCCC2
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[C@@H](Cc1ccc(c(c1)OCCCOC)OC)C[C@@H]([C@H](C[C@@H](C(C)C)C(=O)NCC(C)(C)C(=O)N)O)[NH3+]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1ccc(cc1)C2(CC[NH+](CC2)CCC(C#N)(c3ccccc3)c4ccccc4)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)C1(CC[NH+](CC1)CCC(C#N)(c2ccccc2)c3ccccc3)c4ccccc4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN(C)C(=O)C(CC[NH+]1CCC(CC1)(c2ccc(cc2)Cl)O)(c3ccccc3)c4ccccc4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)c1ccc(cc1)C[NH+]2CCN(CC2)C(c3ccccc3)c4ccc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cccc(c1)C[NH+]2CCN(CC2)C(c3ccccc3)c4ccc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)[nH]c(=O)n2C3CC[NH+](CC3)CCCC(c4ccc(cc4)F)c5ccc(cc5)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H]1C[NH+](CC[C@@]1(C)c2cccc(c2)O)C[C@H](Cc3ccccc3)C(=O)NCC(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)([C@@H]3CC[NH+](C3)CCc4ccc5c(c4)CCO5)C(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(c1ccc(cc1)C(CCC[NH+]2CCC(CC2)C(c3ccccc3)(c4ccccc4)O)O)C(=O)[O-]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1ccc(cc1)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: Cc1c(noc1[N-]S(=O)(=O)c2ccc(cc2)N)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=CC=C(C=C1)NS(=O)(=O)C2=CC=CC(=C2)/C=C/C(=O)NO
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1ccnc(c1)[N-]S(=O)(=O)c2ccc(cc2)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1c(ncnc1OC)[N-]S(=O)(=O)c2ccc(cc2)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cnc(nc1)[N-]S(=O)(=O)c2ccc(cc2)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccnc(n1)[N-]S(=O)(=O)c2ccc(cc2)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1cnc(nc1)[N-]S(=O)(=O)c2ccc(cc2)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1N)S(=O)(=O)c2ccc(cc2)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(noc1N(C(=O)C)S(=O)(=O)c2ccc(cc2)N)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(ccc1N2CCOCC2=O)N3C[C@@H](OC3=O)CNC(=O)c4ccc(s4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H]1COc2c3n1cc(c(=O)c3cc(c2N4CC[NH+](CC4)C)F)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1COc2c3n1cc(c(=O)c3cc(c2N4CC[NH+](CC4)C)F)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c2c(cc(c1F)N3CC[NH2+]CC3)n(cc(c2=O)C(=O)[O-])C4CC4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1CN(C[C@@H]([NH2+]1)C)c2c(c(c3c(c2F)n(cc(c3=O)C(=O)[O-])C4CC4)N)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c2c(cc(c1F)N3CC[NH2+]C(C3)C)n(cc(c2=O)C(=O)[O-])C4CC4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1CN(CC[NH2+]1)c2c(cc3c(c2OC)n(cc(c3=O)C(=O)[O-])C4CC4)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c2c(c(c(c1F)N3CCCC[C@H](C3)[NH3+])Cl)n(cc(c2=O)C(=O)[O-])C4CC4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)NC[C@H]1CN(C(=O)O1)c2ccc(c(c2)F)N3CCOCC3
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C[N+](C)(C)C)OC(=O)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1c(c(=O)[nH]c(=O)n1[C@H]2C[C@@H]([C@H](O2)CO)O)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(=O)[nH]c(=O)n1[C@H]2C[C@@H]([C@H](O2)CO)O)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cn(c(=O)[nH]c1=O)[C@@H]2C[C@H]([C@@H](O2)CO)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cn(c(=O)[nH]c1=O)[C@H]2C[C@@H]([C@H](O2)CO)N=[N+]=[N-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cn(c(=O)[nH]c1=O)[C@H]2C=C[C@H](O2)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2[C@H]([C@@H]([C@H](O2)CO)O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F.Cl
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1c(c(=O)[nH]c(=O)n1[C@H]2C[C@@H]([C@H](O2)CO)O)I
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCCCC[C@H](CC[C@H]1[C@@H]2Cc3cccc(c3C[C@@H]2C[C@@H]1O)OCC(=O)[O-])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCC([C@]1(CC[C@H]2[C@H](O1)CC(=O)[C@H]2CCCCCCC(=O)[O-])O)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C)O)CC[C@@H]4[C@@]3(C/C(=C/[O-])/C(=O)C4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC[C@@H](C(=O)OCC)[NH2+][C@@H](C)C(=O)N1[C@H]2CCCC[C@H]2C[C@H]1C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[NH+](CC)CCOC(=O)C1(CCCCC1)C2CCCCC2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC(CCC)C(=O)O[C@H]1C[C@H]2CC[C@@H](C1)[N+]2(C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](/C=C/[C@H](C)C(C)C)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](/C=C/[C@H](C)C(C)C)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](CCC3=C)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC#CCC(C)[C@@H](/C=C/[C@H]1[C@@H](C[C@H]2[C@@H]1C/C(=C/CCCC(=O)[O-])/C2)O)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/CO)/C)/C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C\C(=O)[O-])/C)/C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C(C(CCC1)(C)C)/C=C/C(=C\C=C\C(=C\C(=O)[O-])\C)/C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(CC)O[C@@H]1C=C(C[C@@H]([C@H]1NC(=O)C)[NH3+])C(=O)OCC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCCCCCCCCCCCC(=O)OC/C=C(\C)/C=C/C=C(\C)/C=C/C1=C(CCCC1(C)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)N[C@@H]1[C@H](C=C(O[C@H]1[C@@H]([C@@H](CO)O)O)C(=O)[O-])[NH+]=C(N)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H]1CCC=C([C@]12CC[C@H](C2)C(=C)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1CC(C1)(C(=O)O)C(=O)O.N.N.[Pt]
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC1=C(C(CCC1)(C)C)/C=C/C(=C/C=C/C(=C/C(=O)[O-])/C)/C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[NH+]1CCN(CC1)C2=[NH+]c3cc(ccc3Nc4c2cccc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)C(=[NH+]c3ccccc3S2)N4CC[NH+](CC4)CCOCCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cc2=C(Nc3ccccc3N=c2s1)N4CC[NH+](CC4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)[NH+]=C(c3cc(ccc3O2)Cl)N4CC[NH2+]CC4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCN(CC1)C2=[NH+]c3ccccc3Oc4c2cc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCn1cc(c(=O)c2c1c(c(c(c2)F)N3CC[NH2+]C(C3)C)F)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCn1cc(c(=O)c2c1cc(c(c2)F)N3CC[NH2+]CC3)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCC(=C2c3ccccc3CC(=O)c4c2ccs4)CC1
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cc2c(s1)Nc3ccccc3[NH+]=C2N4CC[NH+](CC4)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC(C)c1nc(cs1)CN(C)C(=O)N[C@@H](C(C)C)C(=O)N[C@@H](Cc2ccccc2)C[C@@H]([C@H](Cc3ccccc3)NC(=O)OCc4cncs4)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(=O)NC(Cc2ccc(cc2)O)C(=O)Nc3ccc(cc3)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)C[C@@H](C(=O)[C@]1(CO1)C)NC(=O)[C@H](CC2=CC=CC=C2)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCC3=CC=CC=C3)NC(=O)CN4CCOCC4
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1cc(ccc1[C@@H]2[C@H](C(=O)N2c3ccc(cc3)F)CC[C@@H](c4ccc(cc4)F)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)c1ccc(cc1)C[NH+]2CCN(CC2)C(c3ccccc3)c4ccc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cccc(c1)C[NH+]2CCN(CC2)C(c3ccccc3)c4ccc(cc4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)NC(=O)[C@@H]1C[C@@H]2CCCC[C@@H]2C[NH+]1C[C@H]([C@H](Cc3ccccc3)NC(=O)[C@H](CC(=O)N)NC(=O)c4ccc5ccccc5n4)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)CN(C[C@H]([C@H](Cc1ccccc1)NC(=O)O[C@H]2CCOC2)O)S(=O)(=O)c3ccc(cc3)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cccc(c1OCC(=O)N[C@@H](Cc2ccccc2)[C@H](C[C@H](Cc3ccccc3)NC(=O)[C@H](C(C)C)N4CCCNC4=O)O)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1nc2c(=O)[nH]c(nc2n1COC(CO)CO)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc2c(n1CCC(CO)CO)[nH]c(nc2=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc2c(n1COCCO)[nH]c(nc2=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[C@@H](C(=O)OCC(CO)OCn1cnc2c1[nH]c(nc2=O)N)[NH3+]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[C@@H](C(=O)OCCOCN1C=NC2=C1NC(=NC2=O)N)N
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1[nH]c2c(n1)[nH]c(nc2=S)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1[nH]c2c(n1)[nH]cnc2=S
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=NC2=C(N1)C(=S)N=C(N2)N
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC(C)[C@@H](C(=O)OCCOCn1cnc2c1nc([nH]c2=O)N)[NH3+]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: Cc1c(c(c(c2c1O[C@](CC2)(C)CCC[C@H](C)CCC[C@H](C)CCCC(C)C)C)OC(=O)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c(c(c2c1OC(CC2)(C)CCCC(C)CCCC(C)CCCC(C)C)C)OC(=O)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C#CC[NH2+][C@@H]1CCc2c1cccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)[NH2+]CC(COc1cccc2c1C[C@@H]([C@@H](C2)O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[NH2+]CC1CCc2cc(c(cc2N1)[N+](=O)[O-])CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)[NH2+]C[C@@H](COc1cccc2c1CCCC2=O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCOCCOCCOCc1cc2c(cc1CCC)OCO2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c2c(c(c(c1OC)C/C=C(\C)/CCC(=O)[O-])[O-])C(=O)OC2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c2c(c(c1O)C)CC[C@@](O2)(C)CCC[C@H](C)CCC[C@H](C)CCCC(C)C)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCC(=O)O[C@@](Cc1ccccc1)(c2ccccc2)[C@@H](C)C[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](Cc1ccc(c(c1)O)O)[C@@H](C)Cc2ccc(c(c2)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(c(c(c1Cl)Cl)Cc2c(c(cc(c2Cl)Cl)Cl)O)O)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)C(c2ccc(cc2)Cl)C(Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)[S@](=O)CC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)S(=O)CC(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCC(c1ccccc1)(c2ccccc2Cl)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCOC(c1ccccc1)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(=O)O[C@](Cc1ccccc1)(c2ccccc2)[C@H](C)C[NH+](C)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2[C@H]([C@@H]([C@H](O2)CO)O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F.Cl
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1cn(c(=O)nc1N)[C@H]2CC[C@H](O2)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCOC(=O)NC1=NC(=O)N(C=C1F)[C@H]2[C@@H]([C@@H]([C@H](O2)C)O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1[C@@H]([C@H](O[C@H]1N2C=NC(=NC2=O)N)CO)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1c(c(nc(=O)n1[C@@H]2CS[C@@H](O2)CO)N)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cn(c(=O)nc1N)[C@@H]2CS[C@@H](O2)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCOC(=O)Nc1c(cn(c(=O)n1)[C@H]2[C@@H]([C@@H]([C@H](O2)C)O)O)F
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCOC(=O)[C@H](CCc1ccccc1)[NH2+][C@@H](C)C(=O)N2[C@H]3CCCC[C@@H]3C[C@H]2C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)CC[C@@H](C(=O)[O-])[NH2+][C@@H](CCCC[NH3+])C(=O)N2CCC[C@H]2C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H](C(=O)N1CCC[C@H]1C(=O)[O-])[NH2+][C@@H](CCc2ccccc2)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)[C@H](CCc1ccccc1)[NH2+][C@@H](C)C(=O)N2CCC[C@H]2C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)[C@H](CCc1ccccc1)[NH2+][C@@H](C)C(=O)N2CC3(C[C@H]2C(=O)[O-])SCCS3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(=O)OC(C(C)C)OP(=O)(CCCCc1ccccc1)CC(=O)N2C[C@@H](C[C@H]2C(=O)[O-])C3CCCCC3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)[C@H](CCc1ccccc1)[NH2+][C@@H](C)C(=O)N2Cc3cc(c(cc3C[C@H]2C(=O)[O-])OC)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)[C@H](CCc1ccccc1)[NH2+][C@@H](C)C(=O)N2Cc3ccccc3C[C@H]2C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)[C@H](CCc1ccccc1)[NH2+][C@@H](C)C(=O)N2[C@H]3CCC[C@H]3C[C@H]2C(=O)[O-]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(c(cc1c2ccc(cc2F)F)C(=O)[O-])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(c1ccc(c(c1)F)c2ccccc2)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cccc(c1)Nc2ccncc2S(=O)(=O)[N-]C(=O)NC(C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)c1c(c(nc(n1)N(C)S(=O)(=O)C)c2ccc(cc2)F)/C=C/[C@H](C[C@H](CC(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCc1c(c(nc(n1)N)N)c2ccc(cc2)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cnccc1c2cc(c(=O)[nH]c2)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(cc(c(=O)[nH]1)C#N)c2ccncc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCN(c1cccc(c1)c2ccnc3n2ncc3C#N)C(=O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)c1c(c(c(c(n1)C(C)C)/C=C/[C@H](C[C@H](CC(=O)[O-])O)O)c2ccc(cc2)F)COC
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC[C@]12CC(=C)[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=CC(=O)CC[C@H]34
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)CCC4=CC(=O)CC[C@]34C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@]2(C#C)O)CCC4=CC(=O)CC[C@H]34
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@]2([C@H](C[C@]4([C@H]3CC[C@]4(C)O)C)O)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)CO)O)C)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COC(=O)CCC(=O)[O-])O)C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3CC[C@@]4(C(=O)COP(=O)([O-])[O-])O)C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@H]2CC[C@]4([C@H]3CC[C@]4(C)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)OCC(=O)[C@]1(CC[C@@H]2[C@@]1(CC(=O)[C@H]3[C@H]2CCC4=CC(=O)CC[C@]34C)C)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(c(cc1Cl)Cl)COC(Cn2ccnc2)c3ccc(cc3Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1COC(Cn2ccnc2)c3ccc(cc3Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2c(csc2c(c1)Cl)COC(Cn3ccnc3)c4ccc(cc4Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1CSC(Cn2ccnc2)c3ccc(cc3Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)c1cncn1C(C)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)SC(CCc2ccc(cc2)Cl)Cn3ccnc3)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1Cl)Cl)CO/N=C(/Cn2ccnc2)\c3ccc(cc3Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H](c1c(cncn1)F)[C@](Cn2cncn2)(c3ccc(cc3F)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1Cl)Cl)C(Cn2ccnc2)OCc3ccsc3Cl
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[NH+]1[C@@H]2C[C@H](C[C@H]1[C@H]3[C@@H]2O3)OC(=O)[C@H](CO)c4ccccc4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1C2CC(CC1C3C2O3)OC(=O)C(CO)c4ccccc4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[N+]1(C2CCC1CC(C2)OC(=O)C(c3ccccc3)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1[C@@H]2CC[C@H]1C[C@H](C2)OC(=O)C(CO)c3ccccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[N+]1([C@@H]2CC[C@@H]1CC(C2)OC(=O)C(CO)c3ccccc3)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(c2ccccc2)(C(=O)OC3CC4CCC(C3)[N+]45CCCC5)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[N+]1(CCCC(C1)OC(=O)C(c2ccccc2)(c3ccccc3)O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccsc1C(=CCC[NH+]2CCC[C@H](C2)C(=O)[O-])c3c(ccs3)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[N+]1([C@@H]2CC(C[C@H]1[C@H]3[C@@H]2O3)OC(=O)C(c4cccs4)(c5cccs5)O)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc2c(cc(c(c2nc1)O)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2c(cc(c(c2nc1)O)I)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2cccnc2c(c1)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCCCO[N+](=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C[C@@H](c1ccc2cc(ccc2c1)OC)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)C#C/C=C/C[NH+](C)Cc1cccc2c1cccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[NH2+]CC(COc1cccc2c1cccc2)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)NCC(COC1=CC=CC2=CC=CC=C21)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1ccc2c(c1)cnnc2NN
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@@H](CN1c2ccccc2Sc3c1cc(cc3)OC)C[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCCN1c2ccccc2Sc3c1cc(cc3)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCCN1c2ccccc2Sc3c1cccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(CN1c2ccccc2Sc3c1cccc3)[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(CN1c2ccccc2Sc3c1cccc3)C[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[NH+](CC)C(C)CN1c2ccccc2Sc3c1cccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(=O)c1ccc2c(c1)N(c3ccccc3S2)CC(C)[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CC/C=C\1/c2ccccc2Sc3c1cc(cc3)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCCN1c2ccccc2Sc3c1cc(cc3)C(F)(F)F
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C(CO)N(c1c(c(c(c(c1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I)C(=O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(c(cc(c1Cl)Cl)Cl)OCC#CI
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1NC(=O)C(=O)[O-])Cl)NC(=O)C(=O)[O-])C#N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1S(=O)(=O)N)Cl)Cl)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)CC(=O)[NH+]=C(N)N)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1[C@H](C[NH3+])O)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1C[C@@H](C(=O)[O-])[NH3+])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCN(c1ccccc1C)C(=O)/C=C/C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1c2c(cc(c1Cl)S(=O)(=O)N)S(=O)(=O)NC(N2)C(Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c2c(cc(c1Cl)S(=O)(=O)N)S(=O)(=O)NCN2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1C(Nc2cc(c(cc2S1(=O)=O)S(=O)(=O)N)Cl)CCl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1C(Nc2cc(c(cc2S1(=O)=O)S(=O)(=O)N)Cl)CSCC(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)CC2Nc3cc(c(cc3S(=O)(=O)N2)S(=O)(=O)N)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=NS(=O)(=O)c2cc(ccc2N1)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1C(S(=O)(=O)CCC1=O)c2ccc(cc2)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C(CC[NH+]2CCCCC2)(C3CC4CC3C=C4)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c2c(cc(c1Cl)S(=O)(=O)N)S(=O)(=O)NC(N2)C3CC4CC3C=C4
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(cnc1)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(cnc1)CC(O)(P(=O)([O-])[O-])P(=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cnccc1C(=O)NN
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)[NH2+]CC(c1ccc(c(n1)CO)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c(c(cn1)CO)CO)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCc1cc(ccn1)C(=S)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)c1c(c(c(c(n1)C(C)C)/C=C/[C@H](C[C@H](CC(=O)[O-])O)O)c2ccc(cc2)F)COC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: B([C@H](CC(C)C)NC(=O)CNC(=O)C1=C(C=CC(=C1)Cl)Cl)(O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1cc(cnc1)C(=O)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc2c(cc(c(c2nc1)O)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2c(cc(c(c2nc1)O)I)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc2cccnc2c(c1)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(CCC[NH3+])Nc1cc(cc2c1nccc2)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCOc1cc(c2ccccc2n1)C(=O)NCC[NH+](CC)CC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)CC(c1ccccc1)c2c(c3ccccc3oc2=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(c1ccccc1)c2c(c3ccccc3oc2=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC[NH+](CCCC)CCC(c1cc2c(cc(cc2Cl)Cl)c3c1ccc(c3)C(F)(F)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)c1ccc2c(c1)c(=O)c3cc(c(nc3o2)N)C(=O)[O-]
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC(C)(COC(=O)N)COC(=O)NC(C)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1nc2c(n1COCCO)[nH]c(nc2=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[C@@H](C(=O)OCC(CO)OCn1cnc2c1[nH]c(nc2=O)N)[NH3+]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[C@@H](C(=O)OCCOCN1C=NC2=C1NC(=NC2=O)N)N
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1nc2c(=O)[nH]c(nc2n1COC(CO)CO)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[C@@H](C(=O)OCCOCn1cnc2c1nc([nH]c2=O)N)[NH3+]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1[nH]c2c(n1)[nH]c(nc2=S)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1[nH]c2c(n1)[nH]cnc2=S
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=NC2=C(N1)C(=S)N=C(N2)N
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1nc2c(n1CCC(CO)CO)[nH]c(nc2=O)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[C@@H]1[C@H]([C@H](C[C@@H](O1)O[C@@H]2[C@H](O[C@H](C[C@@H]2O)O[C@@H]3[C@H](O[C@H](C[C@@H]3O)O[C@H]4CC[C@]5([C@@H](C4)CC[C@@H]6[C@@H]5C[C@H]([C@]7([C@@]6(CC[C@@H]7C8=CC(=O)OC8)O)C)O)C)C)C)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1[C@H]([C@H](C[C@@H](O1)O[C@@H]2[C@H](O[C@H](C[C@@H]2O)O[C@@H]3[C@H](O[C@H](C[C@@H]3O)O[C@H]4CC[C@]5([C@@H](C4)CC[C@@H]6[C@@H]5CC[C@]7([C@@]6(CC[C@@H]7C8=CC(=O)OC8)O)C)C)C)C)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1[C@H]([C@H](C[C@@H](O1)OC2[C@H](O[C@H](C[C@@H]2O)O[C@@H]3[C@H](O[C@H](C[C@@H]3O)OC4CC[C@]5([C@@H](C4)CC[C@@H]6[C@@H]5CC[C@]7([C@@]6(CC[C@@H]7C8=CC(=O)OC8)O)C)C)C)C)OC(=O)C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CO[C@@H]1[C@@H]([C@H]([C@@H]([C@H](O1)COS(=O)(=O)[O-])O[C@H]2[C@@H]([C@H]([C@@H]([C@@H](O2)C(=O)[O-])O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)COS(=O)(=O)[O-])O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)[O-])O[C@@H]5[C@@H]([C@H]([C@@H]([C@H](O5)COS(=O)(=O)[O-])O)O)NS(=O)(=O)[O-])O)O)OS(=O)(=O)[O-])NS(=O)(=O)[O-])O)OS(=O)(=O)[O-])O)NS(=O)(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(cc2cc3c(c(c2c1O)[O-])C(=O)[C@H]([C@@H](C3)[C@@H](C(=O)[C@H]([C@@H](C)O)O)OC)O[C@H]4C[C@H]([C@@H]([C@H](O4)C)O)O[C@H]5C[C@H]([C@H]([C@H](O5)C)O)O[C@H]6C[C@]([C@@H]([C@H](O6)C)O)(C)O)O[C@H]7C[C@H]([C@@H]([C@H](O7)C)O)O[C@H]8C[C@H]([C@@H]([C@H](O8)C)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@@H]2[C@H](O[C@@H]([C@@H]([C@H]2O)O)O[C@@H]3[C@H](O[C@H]([C@@H]([C@H]3O)O)O)CO)CO)O)O)[NH2+][C@H]4C=C([C@@H]([C@@H]([C@H]4O)O)O)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@H](C)[C@@H]1[C@H](CC[C@@]2(O1)C[C@@H]3C[C@H](O2)C/C=C(/[C@H]([C@H](/C=C/C=C/4\CO[C@H]5[C@@]4([C@@H](C=C([C@H]5O)C)C(=O)O3)O)C)O[C@H]6C[C@@H]([C@H]([C@@H](O6)C)O[C@H]7C[C@@H]([C@H]([C@@H](O7)C)O)OC)OC)\C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1[C@H]([C@@H]([C@H]([C@@H]([C@H]1[NH3+])O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C[NH3+])O)O)[NH3+])O[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O[C@@H]4[C@@H]([C@H]([C@@H]([C@@H](O4)C[NH3+])O)O)[NH3+])O)O)[NH3+]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1[C@H]([C@H](C[C@@H](O1)O[C@H]2CC[C@]3([C@@H](C2)CC[C@@H]4[C@@H]3C[C@H]([C@]5([C@@]4(CC[C@@H]5C6=CC(=O)OC6)O)C)O)C)O)O[C@H]7C[C@@H]([C@@H]([C@H](O7)C)O[C@H]8C[C@@H]([C@@H]([C@H](O8)C)O[C@H]9[C@@H]([C@H]([C@@H]([C@H](O9)CO)O)O)O)O)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC[C@@H]1[C@@]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)OC)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)[NH+](C)C)O)(C)OC)C)C)O)(C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@@H]1[C@@]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)OC)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)[NH+](C)C)OC(=O)CC)(C)O)C)C)O)(C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H]1C[C@@H]([C@H]([C@@H](O1)O[C@H]2[C@H](C[C@@]3(CO3)C(=O)[C@@H]([C@H]([C@H]([C@H](OC(=O)[C@@H]([C@H]([C@@H]2C)O[C@H]4C[C@@H]([C@H]([C@@H](O4)C)OC(=O)C)OC)C)C)C)OC(=O)C)C)C)OC(=O)C)[NH+](C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@@H]1[C@@]([C@@H]([C@H]([NH+](C[C@@H](C[C@@]([C@@H](C([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)OC)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)[NH+](C)C)O)(C)O)C)C)C)O)(C)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1[C@@H]([C@H]([C@@H]([C@H]([C@@H]1[NH3+])O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)[NH3+])O)O)O[C@@H]3[C@@H](C[C@@H]([C@H](O3)C[NH3+])O)[NH3+])[NH3+]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1[C@@H]([C@H]([C@@H]([C@H]([C@@H]1NC(=O)[C@H](CC[NH3+])O)O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)[NH3+])O)O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C[NH3+])O)O)O)[NH3+]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1[C@H]([C@@H]([C@H]([C@@H]([C@H]1[NH3+])O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C[NH3+])O)O)O)O)O[C@@H]3[C@@H]([C@H]([C@@H]([C@H](O3)CO)O)[NH3+])O)[NH3+]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C1CCC(C(O1)OC2C(CC(C(C2O)OC3C(C(C(CO3)(C)O)[NH2+]C)O)[NH3+])[NH3+])[NH3+])[NH2+]C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@@H]1[C@@]([C@@H]([C@H](C(=O)[C@@H](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)OC)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)[NH+](C)C)O)(C)O)C)C)O)(C)O
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCOC1=CC=C(C=C1)C2=CC(=CN2C3=CC=C(C=C3)S(=O)(=O)N)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC/C(=C(/CC)\c1ccc(cc1)O)/c2ccc(cc2)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC/C(=C(/CC)\c1ccc(cc1)OP(=O)([O-])[O-])/c2ccc(cc2)OP(=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C/C=C/c1ccccc1)Cc2cccc3c2cccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1ccc(c(c1)c2nc(n(n2)c3ccc(cc3)C(=O)[O-])c4ccccc4O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)cc(c(c2Cc3c4ccccc4cc(c3O)C(=O)[O-])O)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC[NH+](CCCC)CCC(c1cc2c(cc(cc2Cl)Cl)c3c1ccc(c3)C(F)(F)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cc(c(n1c2ccccc2)C)/C=C/c3ccc4cc(ccc4[n+]3C)N(C)C
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(c(c2c1nccn2)Br)NC3=[NH+]CCN3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1c(cc(c(c1Cl)NC2=[NH+]CCN2)Cl)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c(c1)Cl)NC2=[NH+]CCN2)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)cccc2CC3=[NH+]CCN3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)CC2=[NH+]CCN2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cc(c(c(c1CC2=[NH+]CCN2)C)O)C(C)(C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)CCCC2C3=[NH+]CCN3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1ccc(cc1)N(CC2=[NH+]CCN2)c3cccc(c3)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(c2c1nsn2)NC3=[NH+]CCN3)Cl
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC[C@@]1(C[C@@H]2C[C@@](C3=C(CCN(C2)C1)C4=CC=CC=C4N3)(C5=C(C=C6C(=C5)[C@]78CCN9[C@H]7[C@@](C=CC9)([C@H]([C@@]([C@@H]8N6C=O)(C(=O)OC)O)OC(=O)C)CC)OC)C(=O)OC)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC[C@@]1(C[C@@H]2C[C@@](C3=C(CCN(C2)C1)C4=CC=CC=C4N3)(C5=C(C=C6C(=C5)[C@]78CCN9[C@H]7[C@@](C=CC9)([C@H]([C@@]([C@@H]8N6C=O)(C(=O)OC)O)OC(=O)C)CC)OC)C(=O)OC)O.OS(=O)(=O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCC1=CC2C[C@@](c3c(c4ccccc4[nH]3)C[NH+](C2)C1)(c5cc6c(cc5OC)N([C@@H]7[C@]68CC[NH+]9[C@H]8[C@@](C=CC9)([C@H]([C@@]7(C(=O)OC)O)OC(=O)C)CC)C)C(=O)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1cc(cc(c1OC)OC)C(=O)O[C@@H]2C[C@@H]3C[NH+]4CCc5c6ccccc6[nH]c5[C@H]4C[C@@H]3[C@@H]([C@H]2OC)C(=O)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1ccc2c(c1)[nH]c3c2CC[NH+]4[C@@H]3C[C@H]5[C@@H](C4)C[C@H]([C@@H]([C@H]5C(=O)OC)OC)OC(=O)c6cc(c(c(c6)OC)OC)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1ccc2c(c1)[nH]c3c2CC[NH+]4[C@@H]3C[C@H]5[C@@H](C4)C[C@H]([C@@H]([C@H]5C(=O)OC)OC)OC(=O)/C=C/c6cc(c(c(c6)OC)OC)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1CC(=O)N2[C@@H](C1=O)Cc3c4ccccc4[nH]c3[C@H]2c5ccc6c(c5)OCO6
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCN1C(=O)[C@H](NC(=O)C12CCN(CC2)CC3=CC=C(C=C3)OC4=CC=C(C=C4)C(=O)O)[C@@H](C5CCCCC5)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCC1=C[C@H]2C[C@@](C3=C(CN(C2)C1)C4=CC=CC=C4N3)(C5=C(C=C6C(=C5)[C@]78CCN9[C@H]7[C@@](C=CC9)([C@H]([C@@]([C@@H]8N6C)(C(=O)OC)O)OC(=O)C)CC)OC)C(=O)OC
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: Cc1cccc(c1NC(=O)c2cnc(s2)Nc3cc(nc(n3)C)N4CC[NH+](CC4)CCO)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5.CS(=O)(=O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CN1C=NC(=C1C[N+](C)(C)C/C=C/C(=O)NC2=NC=C3C(=C2)C(=NC=N3)NC4=CC(=C(C=C4)Cl)Br)[N+](=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC1=C(C=C(C=C1)C(=O)NC2=CC(=C(C=C2)CN3CCN(CC3)C)C(F)(F)F)C#CC4=CN=C5N4N=CC=C5
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)OCCCN4CCOCC4
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC(C(=O)O)O.CN1CCN(CC1)C2=CC3=C(C=C2)N/C(=C\4/C(=C5C(=NC4=O)C=CC=C5F)N)/N3.O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CN1CCN(CC1)C2=CC3=C(C=C2)N/C(=C/4\C(=C5C(=NC4=O)C=CC=C5F)N)/N3
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=NC(=NC(=C3)N4CCN(CC4)CCO)C
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: Cc1cc([nH]c1/C=C\2/c3ccccc3NC2=O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[NH+](CC)CCNC(=O)c1c(c([nH]c1C)/C=C\2/c3cc(ccc3NC2=O)F)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCN(CC)CCNC(=O)C1=C(NC(=C1C)/C=C\2/C3=C(C=CC(=C3)F)NC2=O)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1ccc2c(c1)CC(=O)c3ccccc3N2C(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)C2=NC(C(=O)Nc3c2cc(cc3)Cl)O)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)C2=NCC(=O)Nc3c2cc(cc3)[N+](=O)[O-])Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C2=NC(C(=O)Nc3c2cc(cc3)Cl)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C2=NC(C(=O)Nc3c2cc(cc3)Cl)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCN(CC)CCNC(=O)C1=C(NC(=C1C)/C=C\2/C3=C(C=CC(=C3)F)NC2=O)C.C([C@@H](C(=O)O)O)C(=O)O
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C[NH2+]CC[C@@H](c1cccs1)Oc2cccc3c2cccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC[NH+](CCCC)CCC(c1cc2c(cc(cc2Cl)Cl)c3c1ccc(c3)C(F)(F)F)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)cc(c(c2Cc3c4ccccc4cc(c3O)C(=O)[O-])O)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](c1cccc2c1cccc2)[NH2+]CCCc3cccc(c3)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C/C=C/c1ccccc1)Cc2cccc3c2cccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@@H](C1=CC2=C(C=C1)C=C(C=C2)OC)C(=O)OCCCCO[N+](=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C[C@@H](c1ccc2cc(ccc2c1)OC)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)C#C/C=C/C[NH+](C)Cc1cccc2c1cccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CNCC[C@@H](C1=CC=CS1)OC2=CC=CC3=CC=CC=C32
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc(c2c(n1)n(cn2)[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)F)N=C(N=C2N)Cl
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N=C(N=C2N)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1nc2c(nc(nc2n1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)F)Cl)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc2c(nc(nc2n1[C@H]3[C@H]([C@@H]([C@H](O3)COP(=O)([O-])[O-])O)O)F)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc2c(nc(nc2n1[C@H]3C[C@@H]([C@H](O3)CO)O)Cl)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1c2c(nc(n1)N)n(cn2)[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)COP(=O)(O)O)O)O)N=C(N=C2N)F
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CN(CCOC1=CC=C(C=C1)CC2C(=O)NC(=O)S2)C3=CC=CC=N3.C(=C\C(=O)O)\C(=O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCC1=CN=C(C=C1)CCOC2=CC=C(C=C2)CC3C(=O)NC(=O)S3
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CN(CCOc1ccc(cc1)CC2C(=O)[N-]C(=O)S2)c3ccccn3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCc1ccc(nc1)CCOc2ccc(cc2)CC3C(=O)[N-]C(=O)S3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c2c(c(c1O)C)CCC(O2)(C)COc3ccc(cc3)CC4C(=O)[N-]C(=O)S4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCN(Cc1ccc(cc1)OC)c2ccccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCN(Cc1ccccc1)c2ccccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](Cc1cc2c(c(c1)C(=O)N)N(CC2)CCCO)[NH2+]CCOc3ccccc3OCC(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN(CCOC1=CC=C(C=C1)CC2C(=O)NC(=O)S2)C3=CC=CC=N3
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC(=O)N1CCN(CC1)c2ccc(cc2)OC[C@H]3CO[C@](O3)(Cn4ccnc4)c5ccc(cc5Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[NH+]1CCN(CC1)c2ccc(cc2)OC[C@H]3CO[C@](O3)(Cn4cncn4)c5ccc(cc5Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC(C)n1c(=O)n(cn1)c2ccc(cc2)N3CCN(CC3)c4ccc(cc4)OC[C@H]5CO[C@](O5)(Cn6cncn6)c7ccc(cc7Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC[C@@H]([C@H](C)O)n1c(=O)n(cn1)c2ccc(cc2)N3CCN(CC3)c4ccc(cc4)OC[C@H]5C[C@](OC5)(Cn6cncn6)c7ccc(cc7F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1Cl)Cl)COC(Cn2ccnc2)c3ccc(cc3Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(ccc1COC(Cn2ccnc2)c3ccc(cc3Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCc1nn(c(=O)n1CCOc2ccccc2)CCC[NH+]3CCN(CC3)c4cccc(c4)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1Cl)Cl)CO/N=C(/Cn2ccnc2)\c3ccc(cc3Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(=O)N1CCN(CC1)C2=CC=C(C=C2)OC[C@H]3CO[C@](O3)(CN4C=CN=C4)C5=C(C=C(C=C5)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: Cc1ccc(cc1Nc2nccc(n2)c3cccnc3)NC(=O)c4ccc(cc4)CN5CC[NH+](CC5)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C(C=C(C=C1)C(=O)NC2=CC(=CC(=C2)N3C=C(N=C3)C)C(F)(F)F)NC4=NC=CC(=N4)C5=CN=CC=C5
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: Cc1ccc(cc1Nc2nccc(n2)c3cccnc3)C(=O)Nc4cc(cc(c4)n5cc(nc5)C)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C(C=C(C=C1)C(=O)NC2=CC(=C(C=C2)CN3CCN(CC3)C)C(F)(F)F)C#CC4=CN=C5N4N=CC=C5
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=NC(=NC(=C3)N4CCN(CC4)CCO)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: Cc1ccc(cc1S(=O)(=O)N)Nc2nccc(n2)N(C)c3ccc4c(n(nc4c3)C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCCOC(=O)/[NH+]=C(\c1ccc(cc1)NCc2nc3cc(ccc3n2C)C(=O)N(CCC(=O)OCC)c4ccccn4)/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5.CS(=O)(=O)O
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCOc1cc(ccc1C(=O)[O-])CC(=O)N[C@@H](CC(C)C)c2ccccc2N3CCCCC3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)n1c2ccccc2c(c1/C=C/[C@@H](C[C@@H](CC(=O)[O-])O)O)c3ccc(cc3)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1c2ccc(cc2F)F)C(=O)[O-])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(c1ccc(c(c1)F)c2ccccc2)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)C2=NC(C(=O)Nc3c2cc(cc3)Cl)O)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)C2=NCC(=O)Nc3c2cc(cc3)[N+](=O)[O-])Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C2=NC(C(=O)Nc3c2cc(cc3)Cl)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C2=NC(C(=O)Nc3c2cc(cc3)Cl)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)CNCC1=CC=C(C=C1)C2=CC=CC=C2S(=O)(=O)N3CCCC3
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCOC1=CC=C(C=C1)C2=CC(=CN2C3=CC=C(C=C3)S(=O)(=O)N)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1ccc(cc1)n2c(ccn2)[N-]S(=O)(=O)c3ccc(cc3)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cc(c(cc1c2ccc(cc2F)F)C(=O)[O-])O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(c1ccc(c(c1)F)c2ccccc2)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(c(c1)c2nc(n(n2)c3ccc(cc3)C(=O)[O-])c4ccccc4O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCN(c1cccc(c1)c2ccnc3n2ncc3C#N)C(=O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)c2c(oc(n2)CCC(=O)[O-])c3ccccc3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c(no1)c2ccccc2)c3ccc(cc3)S(=O)(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1c2c([nH]n1)ncnc2O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cccn2c1ncc(c2=O)c3[n-]nnn3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](Cn1cnc2c1ncnc2N)OCP(=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](Cn1cnc2c1ncnc2N)OCP(=O)(OCOC(=O)OC(C)C)OCOC(=O)OC(C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C)C(=O)OCOP(=O)(COCCN1C=NC2=C1N=CN=C2N)OCOC(=O)C(C)(C)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC(=O)OCC(CCn1cnc2c1nc(nc2)N)COC(=O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCOC(=O)c1c2n(cn1)-c3ccc(cc3C(=O)N(C2)C)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cn1c(nnn1)SCC2=C(N3[C@@H]([C@@](C3=O)(NC(=O)CSCC#N)OC)SC2)C(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1C(=O)N2C=NC(=C2N=N1)C(=O)N
+FDA-approved: Yes
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C(=O)[C@H](CCCCNC(=O)OCCOC)NC(=O)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@@H]1([C@@H]([C@@H]([C@H]([C@@H]([C@@H]1Cl)Cl)Cl)Cl)Cl)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [C@H]([C@@H]([C@@H](C(=O)[O-])O)O)([C@H](C(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [H]/[NH+]=C(\N)/c1ccc(cc1)OCCCCCOc2ccc(cc2)/C(=[NH+]/[H])/N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N+](=O)([O-])[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [N]=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [O-][99Tc](=O)(=O)=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: [Se]
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2[C@H]([C@@H]([C@H](O2)CO)O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1cn(c(=O)nc1N)[C@H]2CC[C@H](O2)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCOC(=O)Nc1c(cn(c(=O)n1)[C@H]2[C@@H]([C@@H]([C@H](O2)C)O)O)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCOC(=O)NC1=NC(=O)N(C=C1F)[C@H]2[C@@H]([C@@H]([C@H](O2)C)O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1[C@@H]([C@H](O[C@H]1N2C=NC(=NC2=O)N)CO)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1c(c(nc(=O)n1[C@@H]2CS[C@@H](O2)CO)N)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1cn(c(=O)nc1N)[C@@H]2CS[C@@H](O2)CO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F.Cl
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1cc(c2c(c1NCC[NH2+]CCO)C(=O)c3c(ccc(c3C2=O)[O-])[O-])NCC[NH2+]CCO
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C2C(=O)c3ccccc3C2=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1ccc(cc1)C2C(=O)c3ccccc3C2=O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)[NH2+]CCCC1(c2ccccc2-c3c1cccc3)C(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CC/C=C\1/c2ccccc2Sc3c1cc(cc3)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCC[NH+](CCCC)CC(c1cc(cc\2c1-c3ccc(cc3/C2=C/c4ccc(cc4)Cl)Cl)Cl)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)CC(=O)c3ccccc3N2C(=O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CC/C=C\1/c2ccccc2COc3c1cc(cc3)CC(=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=CC(=C2C(=C1NCCNCCO)C(=O)C3=C(C=CC(=C3C2=O)O)O)NCCNCCO
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCN(c1cccc(c1)c2ccnc3n2ncc3C#N)C(=O)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc(cc1)C2=NCC(=O)N(c3c2cc(cc3)Cl)CC4CC4
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1ccc2c(c1)c(c(c(n2)C3CC3)/C=C/[C@H](C[C@H](CC(=O)[O-])O)O)c4ccc(cc4)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCC(CC1)COc2cc3c(cc2OC)c(ncn3)Nc4ccc(cc4F)Br
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=NC(=NC(=C3)N4CCN(CC4)CCO)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CC(C)c1c(c(nc(n1)N(C)S(=O)(=O)C)c2ccc(cc2)F)/C=C/[C@H](C[C@H](CC(=O)[O-])O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(ccc2c1c(nc(n2)N)N)CNc3cc(c(c(c3)OC)OC)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CN1CCC(CC1)CNC2=NN3C(=NC=C3C4=CC(=CC=C4)OC(F)(F)F)C=C2
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: B([C@H](CC(C)C)NC(=O)[C@H](Cc1ccccc1)NC(=O)c2cnccn2)(O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCN(Cc1ccncc1)C(=O)C(CO)c2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCCCCCCCCCCCCCC[N+](C)(C)CCN(Cc1ccc(cc1)OC)c2ncccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cnc(cn1)C(=O)NCCc2ccc(cc2)S(=O)(=O)[N-]C(=O)NC3CCCCC3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1cc(cc(c1OC)OC)Cc2cnc(nc2N)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC([C@H]1CC[C@@H](CC1)C(=O)N[C@@H](C(=O)[O-])Cc2ccccc2)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCOc1ccc(cc1)CNC(=O)c2cc(c(c(c2)OC)OC)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1cc(no1)C(=O)NNCc2ccccc2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: B([C@H](CC(C)C)NC(=O)[C@H](CC1=CC=CC=C1)NC(=O)C2=NC=CN=C2)(O)O
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CCCc1nc2c(cc(cc2n1Cc3ccc(cc3)c4ccccc4C(=O)[O-])c5nc6ccccc6n5C)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)/N=c/1\cc-2n(c3ccccc3nc2cc1Nc4ccc(cc4)Cl)c5ccc(cc5)Cl
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCCS(=O)(=O)NC1=C(C(=C(C=C1)F)C(=O)C2=CNC3=NC=C(C=C23)C4=CC=C(C=C4)Cl)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCCS(=O)(=O)Nc1ccc(c(c1F)C(=O)c2c[nH]c3c2cc(cn3)c4ccc(cc4)Cl)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1C=NC=C1[C@@](C2=CC=C(C=C2)Cl)(C3=CC4=C(C=C3)N(C(=O)C=C4C5=CC(=CC=C5)Cl)C)N
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1ccc(c(c1)c2nc(n(n2)c3ccc(cc3)C(=O)[O-])c4ccccc4O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CS(=O)(=O)CCNCC1=CC=C(O1)C2=CC3=C(C=C2)N=CN=C3NC4=CC(=C(C=C4)OCC5=CC(=CC=C5)F)Cl
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CS(=O)(=O)CCNCc1ccc(o1)c2ccc3c(c2)c(ncn3)Nc4ccc(c(c4)Cl)OCc5cccc(c5)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC(C)(C#N)C1=CC=C(C=C1)N2C3=C4C=C(C=CC4=NC=C3N(C2=O)C)C5=CC6=CC=CC=C6N=C5
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: c1nc(c2c(n1)n(cn2)[C@H]3[C@@H]([C@@H]([C@H](O3)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc(c2c(n1)n(cn2)[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)N=C(N=C2N)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)COP(=O)(O)O)O)O)N=C(N=C2N)F
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: c1nc2c(nc(nc2n1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)F)Cl)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc2c(nc(nc2n1[C@H]3[C@H]([C@@H]([C@H](O3)COP(=O)([O-])[O-])O)O)F)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: c1nc2c(nc(nc2n1[C@H]3C[C@@H]([C@H](O3)CO)O)Cl)N
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COc1c2c(nc(n1)N)n(cn2)[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C1=NC2=C(N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)F)N=C(N=C2N)Cl
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: COCCOC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC=CC(=C3)C#C)OCCOC
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: COCCOC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC=CC(=C3)C#C)OCCOC.Cl
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: COCCOc1cc2c(cc1OCCOC)ncnc2Nc3cccc(c3)C#C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)OCCCN4CCOCC4
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: COc1cc2c(cc1OCCC[NH+]3CCOCC3)c(ncn2)Nc4ccc(c(c4)Cl)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+]1CCC(CC1)COc2cc3c(cc2OC)c(ncn3)Nc4ccc(cc4F)Br
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=NC(=NC(=C3)N4CCN(CC4)CCO)C
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: Cc1c(ccc2c1c(nc(n2)N)N)CNc3cc(c(c(c3)OC)OC)OC
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN1C=NC(=C1C[N+](C)(C)C/C=C/C(=O)NC2=NC=C3C(=C2)C(=NC=N3)NC4=CC(=C(C=C4)Cl)Br)[N+](=O)[O-]
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge.
+Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically wether a molecule is Clinically-trail-Toxic(Yes) or Not Clinically-trail-toxic (No) based on the SMILES string representation of each molecule.. The FDA-approved status will specify if the drug is approved by the FDA for clinical trials(Yes) or Not approved by the FDA for clinical trials(No). You will be provided with several examples molecules SMILES. The task is to predict the binary label for a given molecule, please answer with only Yes or No.
+SMILES: CN(CCOC1=CC=C(C=C1)CC2C(=O)NC(=O)S2)C3=CC=CC=N3
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CN(CCOC1=CC=C(C=C1)CC2C(=O)NC(=O)S2)C3=CC=CC=N3.C(=C\C(=O)O)\C(=O)O
+FDA-approved: No
+Clinically-trail-toxic: Yes
+SMILES: CCc1ccc(nc1)CCOc2ccc(cc2)CC3C(=O)[N-]C(=O)S3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CN(CCOc1ccc(cc1)CC2C(=O)[N-]C(=O)S2)c3ccccn3
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: Cc1c(c2c(c(c1O)C)CCC(O2)(C)COc3ccc(cc3)CC4C(=O)[N-]C(=O)S4)C
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[C@H](Cc1cc2c(c(c1)C(=O)N)N(CC2)CCCO)[NH2+]CCOc3ccccc3OCC(F)(F)F
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CC[C@@H](c1ccc(cc1)Br)c2ccccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: C[NH+](C)CCC(c1ccc(cc1)Br)c2ccccn2
+FDA-approved: No
+Clinically-trail-toxic: No
+SMILES: CCC1=CN=C(C=C1)CCOC2=CC=C(C=C2)CC3C(=O)NC(=O)S3
+FDA-approved: No
+Clinically-trail-toxic:
+
+==================================================

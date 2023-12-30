@@ -1,0 +1,2401 @@
+==============================2023-04-30 13:24:25==============================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCOC(=O)C1CC(=NOC(C)=O)c2ccc(OC)c(OC)c2C1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)CCC(=O)Oc1ccc(O)c2c1CCCC2=O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CCCc2c(O)ccc(O)c21
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)COc1ccc(OC)c2c1C(=O)CCC2
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc2c(c1OCC(=O)O)C(=O)C(CCC(=O)O)CC2
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc2c(c1O)C(=O)C(CCC(=O)O)CC2
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(OC)c2c1-c1nnnn1CCC2(C)C
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC1OC(OCC2OC(Oc3ccc(C4CC(=O)c5c(O)cc(O)cc5O4)cc3O)C(O)C(O)C2O)C(O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C2CC(=O)c3c(O)cc(OC4OC(CO)C(O)C(O)C4OC4OC(C)C(O)C(O)C4O)cc3O2)cc1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)O.CC1OC(OC2C(Oc3cc(O)c4c(c3)OC(c3ccc(O)cc3)CC4=O)OC(CO)C(O)C2O)C(O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC1OC(OC2C(COc3cc(O)c4c(c3)OC(c3ccc(O)cc3)CC4=O)OOC(CO)C2O)C(O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC1OC(OCC2OC(Oc3c(-c4ccc(O)c(O)c4)oc4cc(O)cc(O)c4c3=O)C(O)C(O)C2O)C(O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(C=Cc1ccc(O)cc1)OCC1OC(Oc2cc(O)c3c(c2)OC(c2ccc(O)cc2)CC3=O)C(O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C2CC(=O)c3c(O)cc(OC4OC(COC5OC(C)C(O)C(O)C5O)C(O)C(O)C4O)cc3O2)cc1O
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCc1c(Cc2ccccc2)n(COCCC[Se]c2ccccc2)c(=O)[nH]c1=O
+Activity test result: CM
+Inhibit: Yes
+SMILES: CCc1c(Cc2cc(C)cc(C)c2)n(COCCC[Se]c2ccccc2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCc1c(Cc2ccccc2)n(COCCSc2ccccc2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCc1c(Cc2cc(C)cc(C)c2)n(COCCSc2ccccc2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1c(C(=O)c2ccccc2)n(COCCC[Se]c2ccccc2)c(=O)[nH]c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1c(Cc2ccccc2)n(C(C)OCCN2C(=O)c3ccccc3C2=O)c(=O)[nH]c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCc1c(Cc2ccccc2)n(COCC[Se]c2ccccc2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=c1cc(-c2ccccc2)ss1
+Activity test result: CI
+Inhibit: No
+SMILES: O=Cc1ccc(-c2cccs2)s1
+Activity test result: CI
+Inhibit: No
+SMILES: c1csc(-c2csc(-c3cccs3)c2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: c1csc(-c2cc(-c3ccsc3)cs2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)N(C(C)=O)c1ccc(-c2cccs2)oc1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)N(C(C)=O)c1c(C)cc(-c2cccs2)oc1=O
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1cc(-c2cccs2)ss1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=c1c(-c2c(O)cc(O)c3c2OC(c2ccc(O)cc2)C(O)C3)c(-c2ccc(O)cc2)oc2cc(O)cc(O)c12
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc2oc3cc(=O)cc4oc(-c5ccccc5)cc(c2c2c1CCC(c1ccccc1)O2)c43
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C2Oc3c(c(O)cc4c3C(c3ccc(O)cc3O)C(O)C(c3ccc(O)c(O)c3)O4)CC2O)cc1O
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C2Oc3c(cccc3-c3c(-c4ccc(O)cc4)oc4cc(O)cc(O)c4c3=O)C(=O)C2O)cc1O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1c2c(O)cc(O)cc2OC12c1c(cc(O)c3c1OC(c1ccc(O)cc1)C(O)C3)OC2c1ccc(O)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: Oc1cc(O)c2c(c1)OC(c1ccc(O)c(O)c1)C(O)C2c1c(O)cc(O)c2c1OC(c1ccc(O)c(O)c1)C(O)C2
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(c1c(O)cc(O)cc1O)c1c(-c2ccc(O)cc2)oc2cc(O)c3c(c12)OC(c1ccc(O)cc1)C(O)C3
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=C(Nc1ccc(S(=O)(=O)c2ccc(NS(=O)(=O)Cc3ccccc3[N+](=O)[O-])cc2)cc1)c1ccccc1SSc1ccccc1C(=O)Nc1ccc(S(=O)(=O)c2ccc(NS(=O)(=O)Cc3ccccc3[N+](=O)[O-])cc2)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: COc1ccc(C(=O)Nc2ccc(S(=O)(=O)c3ccc(NC(=O)c4ccccc4SSc4ccccc4C(=O)Nc4ccc(S(=O)(=O)c5ccc(NC(=O)c6ccc(OC)cc6)cc5)cc4)cc3)cc2)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=S(=O)(Nc1ccccc1)c1ccc(-c2c3ccc(n3)c(-c3ccc(S(=O)(=O)Nc4ccccc4)cc3)c3ccc([nH]3)c(-c3ccc(S(=O)(=O)Nc4ccccc4)cc3)c3ccc(n3)c(-c3ccc(S(=O)(=O)Nc4ccccc4)cc3)c3ccc2[nH]3)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1ccccc1)c1cc(S(=O)(=O)NC2=Nc3ccc(Cl)cc3C(c3ccccc3)N2)c(SSc2cc(Cl)c(C(=O)Nc3ccccc3)cc2S(=O)(=O)NC2=Nc3ccc(Cl)cc3C(c3ccccc3)N2)cc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1ccc(Cl)cc1)c1cc(S(=O)(=O)NC2=Nc3ccc(Cl)cc3C(c3ccccc3)N2)c(SSc2cc(Cl)c(C(=O)Nc3ccc(Cl)cc3)cc2S(=O)(=O)NC2=Nc3ccc(Cl)cc3C(c3ccccc3)N2)cc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: NS(=O)(=O)c1ccc(NC(=O)c2ccccc2SSc2ccccc2C(=O)Nc2ccc(S(N)(=O)=O)cc2)cc1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(=O)Nc1ccc(S(=O)(=O)Nc2ccc(S(=O)(=O)c3ccc(NC(=O)c4ccccc4SSc4ccccc4C(=O)Nc4ccc(S(=O)(=O)c5ccc(NS(=O)(=O)c6ccc(NC(C)=O)cc6)cc5)cc4)cc3)cc2)cc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC1(C)Oc2ccc3ccc(=O)oc3c2C(OC(=O)C23CCC(C)(C(=O)O2)C3(C)C)C1OC(=O)C12CCC(C)(C(=O)O1)C2(C)C
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cc(=O)oc2c3c(ccc12)OC(C)(C)C(OC(=O)C12CCC(C)(C(=O)O1)C2(C)C)C3OC(=O)C12CCC(C)(C(=O)O1)C2(C)C
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cc2ccc3c(c2oc1=O)C(OC(=O)C12CCC(C)(C(=O)O1)C2(C)C)C(OC(=O)C12CCC(C)(C(=O)O1)C2(C)C)C(C)(C)O3
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cc2ccc(=O)oc2c2c1OC(C)(C)C(OC(=O)C13CCC(C)(C(=O)O1)C3(C)C)C2OC(=O)C12CCC(C)(C(=O)O1)C2(C)C
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(C)c1cc(=O)oc2c3c(ccc12)OC(C)(C)C(OC(=O)C12CCC(C)(C(=O)O1)C2(C)C)C3OC(=O)C12CCC(C)(C(=O)O1)C2(C)C
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1c(Cl)c(=O)oc2c3c(ccc12)OC(C)(C)C(OC(=O)C12CCC(C)(C(=O)O1)C2(C)C)C3OC(=O)C12CCC(C)(C(=O)O1)C2(C)C
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCc1cc(=O)oc2c3c(ccc12)OC(C)(C)C(OC(=O)C12CCC(C)(C(=O)O1)C2(C)C)C3OC(=O)C12CCC(C)(C(=O)O1)C2(C)C
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CN(C)c1ccc(C(=C(c2ccc(N(C)C)cc2)c2ccc(N(C)C)cc2)c2ccc(N(C)C)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C(=C(c2ccc(OC)cc2)c2ccc(OC)cc2)c2ccc(OC)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Clc1ccc(C(=C=C(c2ccccc2)c2ccccc2)c2ccc(Cl)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(=CCC(N=C(c1ccccc1)c1ccccc1)C(=O)OC)N=C(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(C(=NN(C(=O)c1ccccc1)c1ccccc1)c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: Clc1ccccc1C(=Nc1ccccc1)C(=Nc1ccccc1)c1ccccc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: N.O=C(O)c1cc(C(=C(c2cc(Cl)c(O)c(C(=O)O)c2)c2cc(Cl)c(O)c(C(=O)O)c2)c2cc(Cl)c(O)c(C(=O)O)c2)cc(Cl)c1O
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=[As](O)(O)c1cc(N=Nc2ccc(-c3ccc(N=Nc4cc([As](=O)(O)O)c(O)cc4O)cc3)cc2)c(O)cc1O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cc(N=Nc2ccc(-c3ccc(N=Nc4ccc(O)c(C(=O)O)c4)cc3)cc2)c(C)cc1N
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)c1cc(N=Nc2ccc(N=Nc3ccc(S(=O)(=O)O)cc3)cc2)ccc1O
+Activity test result: CI
+Inhibit: No
+SMILES: O=S(=O)(O)c1cc(N=Nc2ccc(O)cc2)ccc1C=Cc1ccc(N=Nc2ccc(O)cc2)cc1S(=O)(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)c1cc(N=Nc2ccc(C=Cc3ccc(N=Nc4ccc(O)c(C(=O)O)c4)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)ccc1O
+Activity test result: CM
+Inhibit: Yes
+SMILES: CCOc1ccc(N=Nc2ccc(C=Cc3ccc(N=Nc4ccc(OCC)cc4)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)cc1
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cc(-c2ccc(N=Nc3c(N)c(C)cc(S(=O)(=O)O)c3N)c(C)c2)ccc1N=Nc1ccc(O)c(C(=O)O)c1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=C(Nc1ccc(C=Cc2ccc(NC(=O)c3ccccc3O)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1)c1ccccc1O.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: C[N+](C)(C)C.O=C(Nc1ccc(C=Cc2ccc(NC(=O)c3cc(S(=O)(O)=[OH+])ccc3O)cc2S(=O)(O)=[OH+])c(S(=O)(O)=[OH+])c1)c1cc(S(=O)(O)=[OH+])ccc1O
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=C(Nc1ccc(C=Cc2ccc(NC(=O)c3ccc(O)cc3O)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1)c1ccc(O)cc1O.[NaH]
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)c1c(O)ccc(O)c1C(=O)Nc1ccc(C=Cc2ccc(NC(=O)c3c(O)ccc(O)c3C(=O)O)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1.[NaH]
+Activity test result: CA
+Inhibit: Yes
+SMILES: Nc1ccc(C(=O)Nc2ccc(C=Cc3ccc(NC(=O)c4ccc(N)cc4S(=O)(=O)O)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)c(S(=O)(=O)O)c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: CC(=O)Oc1ccccc1C(=O)Nc1ccc(S(=O)(=O)c2ccc(NC(=O)c3ccccc3OC(C)=O)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1ccc(C=Cc2ccc(NC(=O)c3cc(S(=O)(=O)O)ccc3O)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1)c1cc(S(=O)(=O)O)ccc1O.[NaH]
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Nc1ccc(N=Nc2ccc(C=Cc3ccc(N=Nc4ccc(N)c5ccccc45)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)c2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccc2ccccc2c1N=Nc1ccc(C=Cc2ccc(N=Nc3c(N)ccc4ccccc34)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=S(=O)(O)c1cc(N=Nc2ccc(O)c3ccccc23)ccc1C=Cc1ccc(N=Nc2ccc(O)c3ccccc23)cc1S(=O)(=O)O
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=S(=O)(O)c1cc(N=Nc2c(O)ccc3ccccc23)ccc1C=Cc1ccc(N=Nc2c(O)ccc3ccccc23)cc1S(=O)(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)c1cc2ccccc2c(N=Nc2ccc(C=Cc3ccc(N=Nc4c(O)c(C(=O)O)cc5ccccc45)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)c1O
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=S(=O)(O)c1cc(N=Nc2c(O)ccc3ccccc23)ccc1C=Cc1ccc(N=Nc2c(O)ccc3ccccc23)cc1S(=O)(=O)O.[NaH]
+Activity test result: CI
+Inhibit: No
+SMILES: O=S(=O)(O)c1ccc2c(N=Nc3ccc(C=Cc4ccc(N=Nc5c(O)ccc6cc(S(=O)(=O)O)ccc56)cc4S(=O)(=O)O)c(S(=O)(=O)O)c3)c(O)ccc2c1.[NaH]
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC(C)(N)C(=O)NC1C(=O)N2C1SC(C)(C)C2C(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: CC1(C)C(=O)N2CCSC21
+Activity test result: CI
+Inhibit: No
+SMILES: CC12NC(=O)NC(=O)N1CCS2
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)C12NC(=O)NC(=O)N1CCS2
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1C(=O)N(C)C(=O)N2CCCC12
+Activity test result: CI
+Inhibit: No
+SMILES: CN1C(=O)CC2CCCN2C1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CC12CC(=O)NC(=O)N1CCS2
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COc1cc(N=Nc2cc(NC(C)=O)c(N=Nc3ccc(S(=O)(=O)O)cc3)cc2S(=O)(=O)O)c(C)cc1N=Nc1ccc(NC(=O)c2ccc(N)cc2)cc1C
+Activity test result: CA
+Inhibit: Yes
+SMILES: COc1cc(N=Nc2ccc(N=Nc3cc(NC(C)=O)c(N=Nc4ccc(S(=O)(=O)O)cc4)cc3S(=O)(=O)O)c(C)c2)c(C)cc1NC(=O)c1ccc(N)cc1
+Activity test result: CA
+Inhibit: Yes
+SMILES: COc1cc(N=Nc2cc(NC(C)=O)c(N=Nc3ccc(S(=O)(=O)O)cc3)cc2S(=O)(=O)O)c(C)cc1N=Nc1cc(OC)c(NC(=O)c2ccc(N)cc2)cc1C
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(=O)Nc1cc(N=Nc2ccc(NC(=O)c3ccc(N)cc3)cc2C)c(S(=O)(=O)O)cc1N=Nc1ccc(N=Nc2ccc(S(=O)(=O)O)cc2)cc1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(=O)Nc1cc(N=Nc2ccc(N=Nc3ccc(NC(=O)c4ccc(N)cc4)cc3C)cc2C)c(S(=O)(=O)O)cc1N=Nc1ccc(C(=O)O)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: CC(=O)Nc1cc(N=Nc2ccc(N=Nc3ccc(NC(=O)c4ccc(N)cc4)cc3C)cc2C)c(S(=O)(=O)O)cc1N=Nc1cccc(C(=O)O)c1
+Activity test result: CM
+Inhibit: Yes
+SMILES: COc1cc(N=Nc2cc(NC(C)=O)c(N=Nc3ccc(C(=O)O)cc3)cc2S(=O)(=O)O)c(C)cc1N=Nc1cc(OC)c(NC(=O)c2ccc(N)cc2)cc1C
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC1=NN(c2ccc(Cl)cc2S(=O)(=O)O)C(=O)C1N=Nc1ccc(OS(=O)(=O)c2ccc(C)cc2)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: Nc1c(N=Nc2ccc([N+](=O)[O-])cc2)c(S(=O)(=O)O)cc2cc(S(=O)(=O)O)c(N=Nc3ccc(-c4ccc(N=Nc5ccc(O)cc5)cc4)cc3)c(O)c12
+Activity test result: CI
+Inhibit: No
+SMILES: O=[As](O)(O)c1cc(N=Nc2ccc(-c3ccc(N=Nc4cc([As](=O)(O)O)c(O)cc4O)cc3)cc2)c(O)cc1O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cc(N=Nc2ccc(-c3ccc(N=Nc4ccc(O)c(C(=O)O)c4)cc3)cc2)c(C)cc1N
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cc(-c2ccc(N=Nc3cc(S(=O)(=O)O)c4ccccc4c3N)c(C)c2)ccc1N=Nc1cc(S(=O)(=O)O)c2ccccc2c1N
+Activity test result: CA
+Inhibit: Yes
+SMILES: Nc1c(N=Nc2ccc(-c3ccc(N=Nc4cc(S(=O)(=O)O)c5ccccc5c4O)cc3)cc2)cc(S(=O)(=O)O)c2ccccc12
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC1=NN(c2ccc(S(=O)(=O)O)cc2)C(=O)C1N=Nc1ccc(-c2ccc(N=Nc3ccc(OS(=O)(=O)c4ccc(C)cc4)cc3)c(S(=O)(=O)O)c2)cc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cn1cc(NC(=O)c2cc([N+](=O)[O-])cn2C)cc1C(=O)Nc1cc(S(=O)(=O)O)c2cc(S(=O)(=O)O)cc(S(=O)(=O)O)c2c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cl.Cn1cc(N)cc1C(=O)Nc1cc(C(=O)Nc2cc(S(=O)(=O)O)c3cc(S(=O)(=O)O)cc(S(=O)(=O)O)c3c2)n(C)c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cn1cc([N+](=O)[O-])cc1C(=O)Nc1cc(C(=O)Nc2ccc(S(=O)(=O)O)c3cc(S(=O)(=O)O)ccc23)n(C)c1.[NaH]
+Activity test result: CI
+Inhibit: No
+SMILES: Cl.Cn1cc(N)cc1C(=O)Nc1cc(C(=O)Nc2ccc(S(=O)(=O)O)c3cc(S(=O)(=O)O)ccc23)n(C)c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cl.Cn1cc(NC(=O)c2cc(=N)[nH]n2C)cc1C(=O)Nc1ccc2cc(S(=O)(=O)O)cc(S(=O)(=O)O)c2c1.[KH]
+Activity test result: CI
+Inhibit: No
+SMILES: Cn1cc(NC(=O)c2cc(NC(=O)c3cc(NC=O)cn3C)cn2C)cc1C(=O)NCCC(=N)N
+Activity test result: CI
+Inhibit: No
+SMILES: Cn1cc(N)cc1C(=O)Nc1cc(C(=O)Nc2ccc3cc(S(=O)(=O)O)cc(S(=O)(=O)O)c3c2)n(C)c1.[KH]
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COC1N(C2CC(N=[N+]=[N-])C(CO)O2)C(=O)NC(=O)C1(C)Br
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(N=[N+]=[N-])C(CO)O2)C(=O)NC(=O)C1(C)Cl
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(N=[N+]=[NH2+])C(CO)O2)C(=O)NC(=O)C1(C)I
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(N=[N+]=[NH2+])C(CO)O2)C(=O)NC(=O)C1(C)Br
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(N=[N+]=[N-])C(CO)O2)C(=O)NC(=O)C1(C)I
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(F)C(CO)O2)C(=O)NC(=O)C1(C)I
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCOC1N(C2CC(N=[N+]=[N-])C(CO)O2)C(=O)NC(=O)C1(C)Br
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: C=C1C2CCC3C4(C)CCCC(C)(C(=O)OC)C4CCC3(C2)C1OC(C)=O
+Activity test result: CI
+Inhibit: No
+SMILES: CC12CCC3C(CCC4C(C)(C)CCCC43C)(CC1=O)C2
+Activity test result: CI
+Inhibit: No
+SMILES: CC1(C)CCCC2(C)C1CCC13CC(C)(CCC21)C3CO
+Activity test result: CI
+Inhibit: No
+SMILES: CC1(C(=O)O)CCCC2(C)C3CCC4CC3(CCC12)CC4C(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: CC1(O)CC23CCC4C(C)(C(=O)O)CCCC4(C)C2CCC1C3
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)OC1C(C)(O)C2CCC3C4(C)CCCC(C)(C)C4CCC13C2
+Activity test result: CI
+Inhibit: No
+SMILES: C=C1C2CCC3C4(C)CCCC(C)(C(=O)O)C4CCC3(C2)C1OC(C)=O
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1ccc(N2CC(O)CSC2=Nc2ccccc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccccc1N1C(=O)CSC1=Nc1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CSC(=Nc2ccccc2F)N1c1ccccc1F
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccccc1N=C1SCC(=O)N1c1ccccc1C
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=c1ssc(=Nc2ccccc2)n1-c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1ssc(=Nc2ccc(Cl)cc2)n1-c1ccc(Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccccc1N1CCCSC1=Nc1ccccc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=C(CCc1ccc(O)c(O)c1)OCCc1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(CCc1cc(O)ccc1O)OCCc1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc(CCC(=O)CC(=O)CCc2ccc(O)c(OC)c2)ccc1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)CC(NC(=O)OC(C)(C)C)C(=O)NC(CC(=O)OCc1ccccc1)C(=O)OCc1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)CC(NC(=O)OC(C)(C)C)C(=O)NC(CCC(=O)OCc1ccc([N+](=O)[O-])cc1)C(=O)OCc1ccc([N+](=O)[O-])cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(NC(=O)CNC(=O)OC(C)(C)C)C(=O)NC(Cc1ccccc1)C(=O)OCc1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)Oc1ccc(CCC(=O)OC(C(=O)O)C(OC(=O)CCc2ccc(OC(C)=O)c(OC(C)=O)c2)C(=O)O)cc1OC(C)=O
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCC1NC(=O)C(C(O)C(C)C)N(C)C(=O)C(C(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(C)NC(=O)C(CCCCNC(=O)COc2ccc(CC(NC(=O)OC3CCOC3)C(O)CN(CC(C)C)S(=O)(=O)c3ccc(N)cc3)cc2)NC(=O)C(CC(C)C)N(C)C(=O)C(C(C)C)NC(=O)C(CC(C)C)N(C)C(=O)C(CO)N(C)C1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCC1NC(=O)C(C(O)C(C)C)N(C)C(=O)C(C(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(C)NC(=O)C(CCCCNC(=O)OCc2ccccc2Cl)NC(=O)C(CC(C)C)N(C)C(=O)C(C(C)C)NC(=O)C(CC(C)C)N(C)C(=O)C(CO)N(C)C1=O
+Activity test result: CM
+Inhibit: Yes
+SMILES: CCC1NC(=O)C(C(O)C(C)C)N(C)C(=O)C(C(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(C)NC(=O)C(CCCCNC(=O)COc2ccc(Sc3c(O)cc(-c4ccccc4)oc3=O)c(C(C)(C)C)c2)NC(=O)C(CC(C)C)N(C)C(=O)C(C(C)C)NC(=O)C(CC(C)C)N(C)C(=O)C(CO)N(C)C1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CC=C(NC(=O)C(CCCCN)NC(=O)C(C)NC(=O)C1CSC(C)C(NC(=O)C2CSCC(NC(=O)C(C)NC(=O)C(N)C(C)CC)C(=O)NC(CCCCN)C(=O)NC(Cc3ccccc3)C(=O)NC(CC(C)C)C(=O)N2)C(=O)N2CCCC2C(=O)NCC(=O)N1)C(=O)NCC(=O)NC1CSCC2NC(=O)C(Cc3ccc(O)cc3)NC(=O)C(CSC=CNC2=O)NC(=O)C(CC(N)=O)NC(=O)C(Cc2ccccc2)NC1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCC(C)C1NC(=O)C2CCCN2C(=O)C(Cc2ccc(O)cc2)NC(=O)C(CC(N)=O)NC(=O)C(CCC(N)=O)NC(=O)C(CO)NC(=O)C(C(C)C)NC(=O)C(N)CSSCC(C(=O)O)NC(=O)C(CCC(N)=O)NC(=O)C(C(C)C)NC1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CC=CCC(C)C(O)C1C(=O)NC(CC)C(=O)N(C)CC(=O)N(C)C(CC(C)C)C(=O)NC(C(C)C)C(=O)N(C)C(CC(C)C)C(=O)NC(C)C(=O)NC(C)C(=O)N(C)C(CC(C)C)C(=O)N(C)C(CC(C)C)C(=O)N(C)C(C(C)C)C(=O)N1C
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCC1NC(=O)C(C(O)C(C)C)N(C)C(=O)C(C(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(C)NC(=O)C(CCCCNC(=O)C(Cc2ccccc2)NC(=O)C(NC(=O)C2CCCN2CC(O)C(Cc2ccccc2)NC(=O)C(CC(N)=O)NC(=O)OCc2ccccc2)C(C)CC)NC(=O)C(CC(C)C)N(C)C(=O)C(C(C)C)NC(=O)C(CC(C)C)N(C)C(=O)C(CO)N(C)C1=O
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COc1cc(N=Nc2cc(NC(C)=O)c(N=Nc3ccc(S(=O)(=O)O)cc3)cc2S(=O)(=O)O)c(C)cc1N=Nc1ccc(NC(=O)c2ccc(N)cc2)cc1C
+Activity test result: CA
+Inhibit: Yes
+SMILES: COc1cc(N=Nc2ccc(N=Nc3cc(NC(C)=O)c(N=Nc4ccc(S(=O)(=O)O)cc4)cc3S(=O)(=O)O)c(C)c2)c(C)cc1NC(=O)c1ccc(N)cc1
+Activity test result: CA
+Inhibit: Yes
+SMILES: COc1cc(N=Nc2cc(NC(C)=O)c(N=Nc3ccc(S(=O)(=O)O)cc3)cc2S(=O)(=O)O)c(C)cc1N=Nc1cc(OC)c(NC(=O)c2ccc(N)cc2)cc1C
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(=O)Nc1cc(N=Nc2ccc(NC(=O)c3ccc(N)cc3)cc2C)c(S(=O)(=O)O)cc1N=Nc1ccc(N=Nc2ccc(S(=O)(=O)O)cc2)cc1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(=O)Nc1cc(N=Nc2ccc(N=Nc3ccc(NC(=O)c4ccc(N)cc4)cc3C)cc2C)c(S(=O)(=O)O)cc1N=Nc1ccc(C(=O)O)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: CC(=O)Nc1cc(N=Nc2ccc(N=Nc3ccc(NC(=O)c4ccc(N)cc4)cc3C)cc2C)c(S(=O)(=O)O)cc1N=Nc1cccc(C(=O)O)c1
+Activity test result: CM
+Inhibit: Yes
+SMILES: CC(=O)Nc1cc(N=Nc2ccc(N=Nc3ccc(NC(=O)c4ccc(N)cc4)cc3C)cc2C)c(S(=O)(=O)O)cc1N=Nc1ccc(S(=O)(=O)O)cc1
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COC1N(C2CC(N=[N+]=[N-])C(CO)O2)C(=O)NC(=O)C1(C)Br
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(N=[N+]=[N-])C(CO)O2)C(=O)NC(=O)C1(C)Cl
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(N=[N+]=[NH2+])C(CO)O2)C(=O)NC(=O)C1(C)I
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(N=[N+]=[NH2+])C(CO)O2)C(=O)NC(=O)C1(C)Br
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(N=[N+]=[N-])C(CO)O2)C(=O)NC(=O)C1(C)I
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC1N(C2CC(F)C(CO)O2)C(=O)NC(=O)C1(C)I
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(C)OC1N(C2CC(N=[N+]=[N-])C(CO)O2)C(=O)NC(=O)C1(C)Br
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: NCCN1C(=O)c2ccccc2C1(O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: N#CCC1(c2ccc(Cl)cc2)NC(=O)c2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)CCN1C(=O)c2ccccc2C1(O)c1ccc(Cl)cc1.Cl
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)(CO)N1C(=O)c2ccccc2C1(O)c1ccc(Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCN1C(=O)c2ccccc2C1(O)c1ccc(Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: NCCN1C(=O)c2ccccc2C1c1ccc(Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CN1C(=O)c2ccccc2C1(N)c1ccccc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Nc1ccc(C=Cc2ccc(N)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1ccc(C=Cc2ccc([N+](=O)[O-])cc2S(=O)(=O)O)c(S(=O)(=O)O)c1
+Activity test result: CI
+Inhibit: No
+SMILES: N#CC(=Cc1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C(C#N)=Cc2cccc([N+](=O)[O-])c2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C=C(C#N)c2ccccc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)c1ccc(C=C(C#N)c2ccccc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C(Cl)=C(C=O)c2ccc(OC)c(OC)c2)cc1OC
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cn1cc(NC(=O)Nc2cc(C(=O)Nc3cc(C(=O)Nc4ccc(S(=O)(=O)O)c5cc(S(=O)(=O)O)cc(S(=O)(=O)O)c45)n(C)c3)n(C)c2)cc1C(=O)Nc1cc(C(=O)Nc2ccc(S(=O)(=O)O)c3cc(S(=O)(=O)O)cc(S(=O)(=O)O)c23)n(C)c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cn1cc(NC(=O)Nc2cc(C(=O)Nc3cc(C(=O)Nc4ccc(S(=O)(=O)O)c5cccc(S(=O)(=O)O)c45)n(C)c3)n(C)c2)cc1C(=O)Nc1cc(C(=O)Nc2ccc(S(=O)(=O)O)c3cccc(S(=O)(=O)O)c23)n(C)c1.[NaH]
+Activity test result: CI
+Inhibit: No
+SMILES: Cn1cc(NC(=O)Nc2cc(C(=O)Nc3cc(C(=O)Nc4ccc(S(=O)(=O)O)c5cc(S(=O)(=O)O)ccc45)n(C)c3)n(C)c2)cc1C(=O)Nc1cc(C(=O)Nc2ccc(S(=O)(=O)O)c3cc(S(=O)(=O)O)ccc23)n(C)c1.[NaH]
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cn1cc(NC(=O)Nc2cc(C(=O)Nc3cc(C(=O)Nc4ccc5cc(S(=O)(=O)O)cc(S(=O)(=O)O)c5c4)n(C)c3)n(C)c2)cc1C(=O)Nc1cc(C(=O)Nc2ccc3cc(S(=O)(=O)O)cc(S(=O)(=O)O)c3c2)n(C)c1.[KH]
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cn1cc(NC(=O)Nc2cc(C(=O)Nc3cc(C(=O)Nc4cc(S(=O)(=O)O)c5cc(S(=O)(=O)O)cc(S(=O)(=O)O)c5c4)n(C)c3)n(C)c2)cc1C(=O)Nc1cc(C(=O)Nc2cc(S(=O)(=O)O)c3cc(S(=O)(=O)O)cc(S(=O)(=O)O)c3c2)n(C)c1.[Na+]
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cn1cc(NC(=O)Nc2cc(C(=O)Nc3cc(C(=O)Nc4ccc5c(S(=O)(=O)O)cccc5c4S(=O)(=O)O)n(C)c3)n(C)c2)cc1C(=O)Nc1cc(C(=O)Nc2ccc3c(S(=O)(=O)O)cccc3c2S(=O)(=O)O)n(C)c1.[Na+]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cn1cc(NC(=O)Nc2cc(C(=O)Nc3cc(C(=O)Nc4ccc(P(=O)(O)O)c5cc(P(=O)(O)O)ccc45)n(C)c3)n(C)c2)cc1C(=O)Nc1cc(C(=O)Nc2ccc(P(=O)(O)O)c3cc(P(=O)(O)O)ccc23)n(C)c1.[NaH]
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=C(Nc1ccc(C2=NCCN2)cc1)Nc1cc(NC(=O)Nc2ccc(C3=NCCN3)cc2)cc(C(=O)O)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1cccc(C2=NCCN2)c1)Nc1cccc(C2=NCCN2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: NC(=O)c1cc(NC(=O)c2ccc(C(=O)Nc3cc(C(N)=O)cc(C4=NCCN4)c3)cc2)cc(C2=NCCN2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: CCNC(=O)c1cc(NC(=O)c2ccc(C(=O)Nc3cc(C(=O)NCC)cc(C4=NCCN4)c3)cc2)cc(C2=NCCN2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: CN1CCN=C1c1ccc(NC(=O)Nc2ccc(NC(=O)Nc3ccc(C4=NCCN4C)cc3)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1ccc(C2=NCCN2)cc1)Nc1cccc(C(=O)Nc2ccc(C3=NCCN3)cc2)c1
+Activity test result: CM
+Inhibit: Yes
+SMILES: CNC(=O)c1ccc(NC(=O)Nc2cccc(C3=NCCN3)c2)cc1NC(=O)Nc1cccc(C2=NCCN2)c1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1cc(C)n(-c2c(O)ccc(O)c2-n2nc(C)cc2C)n1
+Activity test result: CI
+Inhibit: No
+SMILES: Oc1cc(-n2cccn2)c(O)cc1-n1cccn1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)CN(CC(=O)O)Cc1ccn(-c2cccc(-n3ccc(CN(CC(=O)O)CC(=O)O)n3)n2)n1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cc(C)n(-c2ccnc3cc(Cl)ccc23)n1
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)C=Nc1c(C#N)c(CC#N)nn1-c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: Clc1ccccc1C(n1cc(Br)cn1)n1cc(Br)cn1
+Activity test result: CI
+Inhibit: No
+SMILES: Oc1ccc(O)c(-n2cccn2)c1-n1cccn1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=S(=O)(O)c1ccc2c(N=Nc3ccc(CCc4ccc(N=Nc5c(O)ccc6cc(S(=O)(=O)O)ccc56)cc4S(=O)(=O)O)c(S(=O)(=O)O)c3)c(O)ccc2c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=C(O)c1cc(N=Nc2ccc(CCc3ccc(N=Nc4cc(C(=O)O)c(O)c5ccccc45)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)c2ccccc2c1O.[NaH]
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1c(S(=O)(=O)O)cc2cc(S(=O)(=O)O)ccc2c1N=Nc1ccc(CCc2ccc(N=Nc3c(N)c(S(=O)(=O)O)cc4cc(S(=O)(=O)O)ccc34)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Nc1c(S(=O)(=O)O)cc2cc(S(=O)(=O)O)ccc2c1N=Nc1ccc(-c2ccc(N=Nc3c(N)c(S(=O)(=O)O)cc4cc(S(=O)(=O)O)ccc34)c(S(=O)(=O)O)c2)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: Nc1ccc(N=Nc2ccc(C=Cc3ccc(N=Nc4ccc(N)c5ccccc45)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)c2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccc2ccccc2c1N=Nc1ccc(C=Cc2ccc(N=Nc3c(N)ccc4ccccc34)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1
+Activity test result: CM
+Inhibit: Yes
+SMILES: Nc1ccc(N=Nc2ccc(CCc3ccc(N=Nc4ccc(N)c5cc(S(=O)(=O)O)ccc45)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)c2ccc(S(=O)(=O)O)cc12.[NaH]
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: OCc1nnn(-c2ccccc2)c1CO
+Activity test result: CI
+Inhibit: No
+SMILES: CCC(C)(O)c1cn(-c2cccc(S(=O)(=O)O)c2)nn1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCC(O)c1cn(-c2cccc(S(=O)(=O)O)c2)nn1
+Activity test result: CI
+Inhibit: No
+SMILES: CCC(C)(O)c1cn(-c2ccc(S(=O)(=O)O)cc2)nn1
+Activity test result: CI
+Inhibit: No
+SMILES: CCC(C)(O)c1cn(-c2ccc(Cl)cc2)nn1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc(-n2nnc(C#N)c2O)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: NNC(=O)c1ccc(-n2nnc(C(=O)NN)c2C(=O)NN)cc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCCC1C(=O)Nc2cccc3ncn(c23)C1=O
+Activity test result: CI
+Inhibit: No
+SMILES: C=CCC1C(=O)Nc2cccc3ncn(c23)C1=O
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc2c3c(c1)nc(C)n3C(=O)C(C)S2
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc2c3c(c1)ncn3C(=O)CS2
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc2c3c(c1)nc(C)n3C(=O)CS2
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc2c3c(c1)ncn3C(=O)CCS2
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CC(=O)n2cnc3cccc(c32)N1
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC1=CC(C)(C)C(C#N)(C#N)C(N)=C1C#N
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1=C(O)C(O)=C(C(=O)OC)CC1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: NC(CCP(=O)(O)CCC1C=CC=CC1)C(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: NC(CCOCCP(=O)(O)CCC1C=CC=CC1)C(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: CCC1=C(CC)C1(C#N)[N+](=O)[O-]
+Activity test result: CI
+Inhibit: No
+SMILES: CC1=C(C)C1[N+](=O)[O-]
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1=C(O)C(O)=C(C(=O)OC)C1.[NaH]
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=S(=O)(O)c1ccc(Sc2ccc(S(=O)(=O)O)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: N=C(N)NC(=N)Nc1ccc(Sc2ccc(NC(=N)NC(=N)N)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cc(O)c(C(C)(C)C)cc1Sc1cc(C(C)(C)C)c(O)cc1C
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)c1ccc(Sc2ccccc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Oc1ccc(Cl)cc1Sc1cc(Cl)ccc1O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cc(Sc2cc(C)c(O)c(C(C)(C)C)c2)cc(C(C)(C)C)c1O
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1ccccc1Sc1ccccc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1cc(S(=O)(=O)Nc2nc(Nc3ccccc3)n[nH]2)c(SCC(=O)O)cc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cc(S(=O)(=O)Nc2nc(Nc3ccc(Cl)cc3)n[nH]2)c(S)cc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(Nc2n[nH]c(NS(=O)(=O)c3cc(C)c(Cl)cc3S)n2)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: COc1cccc(Nc2n[nH]c(NS(=O)(=O)c3cc(C)c(Cl)cc3S)n2)c1
+Activity test result: CM
+Inhibit: Yes
+SMILES: COc1cc(Nc2n[nH]c(NS(=O)(=O)c3cc(C)c(Cl)cc3S)n2)cc(OC)c1OC
+Activity test result: CM
+Inhibit: Yes
+SMILES: CC(=O)Oc1cc(S(=O)(=O)Nc2nc(Nc3ccc(C)cc3)n[nH]2)c(S)cc1Cl
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1ccc(Nc2n[nH]c(NS(=O)(=O)c3cc(C)c(Cl)cc3S)n2)cc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C(O)C4=O)OC(C)C(C)C3O
+Activity test result: CI
+Inhibit: No
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)CC4)OC(C)C(C)C3O
+Activity test result: CA
+Inhibit: Yes
+SMILES: COCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)CC4)OC(C)C(C)C3O
+Activity test result: CM
+Inhibit: Yes
+SMILES: CCCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)CC4)OC(C)C(C)C3O
+Activity test result: CM
+Inhibit: Yes
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C(O)C4O)OC(C)C(C)C3O
+Activity test result: CI
+Inhibit: No
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C=C4)OC(C)C(C)C3=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)CC4)OC(C)C(C)C3=O
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCCCCCCCCCCCCCCCCCOC(COP(=O)(O)OCC1CCC(n2ccc(NC(=O)CCCCCCCCCCCCCCC)nc2=O)O1)COP(=O)(O)OCC1OC(n2cc(C)c(=O)[nH]c2=O)CC1N=[N+]=[N-]
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCCCCNc1ccn(C2OC(COP(=O)(O)OCC(COP(=O)(O)OCC3OC(n4cc(C)c(=O)[nH]c4=O)CC3N=[N+]=[N-])OC(=O)CCCCCCCCCCCCCCC)C(O)C2O)c(=O)n1
+Activity test result: CM
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCC(=O)Nc1ccn(C2CCC(COP(=O)(O)OCC(COP(=O)(O)OCC3OC(n4cc(C)c(=O)[nH]c4=O)CC3N=[N+]=[N-])OC(=O)CCCCCCCCCCCCCCC)O2)c(=O)n1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCC(=O)Nc1ccn(C2CCC(COP(=O)(O)OCC3CCC(n4cnc5c(O)ncnc54)O3)O2)c(=O)n1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCC(=O)Nc1nc(=O)n(C2CCC(COP(=O)(O)OCC3OC(n4cc(C)c(=O)[nH]c4=O)CC3N=[N+]=[N-])O2)cc1C
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCCCCNc1nc(=O)n(C2CC(O)C(COP(=O)(O)OCC3OC(n4cc(C)c(=O)[nH]c4=O)CC3N=[N+]=[N-])O2)cc1F
+Activity test result: CM
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCCCCOC(COP(=O)(O)OCC1CCC(n2cnc3c(O)ncnc32)O1)COP(=O)(O)OCC1OC(n2cc(C)c(=O)[nH]c2=O)CC1N=[N+]=[N-]
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCOC(=O)c1c(N)sc2c1CCCC2
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)c1c(N)sc2c1C(C(=O)OCC)CCC2
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)C1CCCc2sc(N)c(C#N)c21
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)C1(C)CCCc2sc(N)c(C#N)c21
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)c1c(N)sc2c1CCCCC2
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)c1c(N)sc2c1C(C(=O)OCC)CCCC2
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)Nc1sc2c(c1C#N)CCCC2
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCOc1ccc(N=Cc2ccc3ccccc3n2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCOc1ccc(N=Cc2ccc3cc(C)ccc3n2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc2nc(C=Nc3ccc(Cl)cc3)cc(C)c2c1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc2nc(C=Nc3ccccc3Cl)cc(C)c2c1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccccc1C=Cc1ccc2ccccc2n1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C=Cc2ccc3ccccc3n2)cc1OC
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=NNc1ccc([N+](=O)[O-])cc1[N+](=O)[O-])c1ccc2ccccc2n1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC1=C2C(=O)c3ccccc3C2=C(C)S(=O)(=O)O1
+Activity test result: CI
+Inhibit: No
+SMILES: CC1=C2C(=C(CBr)OS1(=O)=O)C(=O)c1ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1c2ccccc2S(=O)(=O)c2ccccc21
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=C1c2ccccc2S(=O)(=O)c2c1cccc2[N+](=O)[O-]
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)c1ccc2c(c1)S(=O)(=O)c1ccccc1C2=O
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)C=C1C(=O)c2ccccc2C1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCC1=C2C(=O)c3ccccc3C2=C(C)S(=O)(=O)O1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=[N+]([O-])c1ccccc1S(=O)c1ccccc1[N+](=O)[O-]
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc(S(=O)c2ccccc2[N+](=O)[O-])cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=S(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccccc1S(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)Nc1ccccc1S(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)Nc1ccc(S(=O)c2ccc(NC(C)=O)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1ccccc1S(=O)c1ccccc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=Cc1ccc(-c2cccs2)s1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc(-c2cccs2)sc1-c1cccs1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCCCCCCc1cc(-c2ccc(C=O)s2)sc1-c1ccc(C=O)s1
+Activity test result: CI
+Inhibit: No
+SMILES: Brc1ccc(-c2ccc(-c3ccc(Br)s3)s2)s1
+Activity test result: CI
+Inhibit: No
+SMILES: c1csc(-c2csc(-c3cccs3)c2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=Cc1ccc(-c2ccc(-c3ccc(C=O)s3)o2)s1
+Activity test result: CI
+Inhibit: No
+SMILES: Cl.NCc1ccc(-c2ccc(CN)s2)s1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCCCCCCCCCCCCCCC(=O)Nc1ccn(C2CCC(COP(=O)(O)OC3CC(n4cc(C)c(=O)[nH]c4=O)OC3CO)O2)c(=O)n1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCCNc1ccn(C2CC(OP(=O)(O)OCC3OC(n4cc(C)c(=O)[nH]c4=O)CC3N=[N+]=[N-])C(CO)O2)c(=O)n1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCCNc1ccn(C2OC(COP(=O)(O)OC3CC(n4cc(C)c(=O)[nH]c4=O)OC3CO)C(O)C2O)c(=O)n1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCCCCCCCCCCCCCNc1ccn(C2CC(OP(=O)(O)OCC3CCC(n4ccc(=N)[nH]c4=O)O3)C(CO)O2)c(=O)n1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCCCCNc1ccn(C2OC(CO)C(OP(=O)(O)OCC3CCC(n4ccc(=N)[nH]c4=O)O3)C2O)c(=O)n1
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cn(C2CC(OP(=O)(O)OCC3CCC(n4ccc(=N)[nH]c4=O)O3)C(CO)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCCCCCCCCCC(=O)Nc1ccn(C2CC(OP(=O)(O)OCC3OC(n4cc(C)c(=O)[nH]c4=O)CC3N=[N+]=[N-])C(CO)O2)c(=O)n1
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cn1c(N)c(N)c(=O)[nH]c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cn1c(N)c(Br)c(=O)n(C)c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)C(=O)NNc1cc(=O)n(C)c(=O)n1C
+Activity test result: CI
+Inhibit: No
+SMILES: COS(=O)(=O)c1c(N)n(C)c(=O)n(C)c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: C=CCn1c(N)c(N=O)c(=O)n(C)c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cn1c(=O)[nH]c(O)c(N=O)c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(COCCCO[Si](C)(C)C(C)(C)C)c(=O)[nH]c1=O
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COC(=O)C(Cc1ccccc1)NP(=O)(O)OCC1C=CC(n2cc(C)c(=O)[nH]c2=O)O1.N
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC(=O)C(Cc1c[nH]c2ccccc12)NP(=O)(O)OCC1OC(n2cc(F)c(=O)[nH]c2=O)CC1O
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(Cc1c[nH]c2ccccc12)NP(=O)(O)OCC1OC(n2cc(Br)c(=O)[nH]c2=O)CC1O
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(Cc1c[nH]c2ccccc12)NP(=O)(O)OCC1OC(n2cc(I)c(=O)[nH]c2=O)CC1O
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(Cc1c[nH]c2ccccc12)NP(=O)(OCCC#N)OCC1OC(n2cc(C)c(=O)[nH]c2=O)CC1N=[N+]=[N-]
+Activity test result: CM
+Inhibit: Yes
+SMILES: COC(=O)C(Cc1c[nH]c2ccccc12)NP(=O)(OC)OCC1OC(n2cc(C)c(=O)[nH]c2=O)CC1N=[N+]=[N-]
+Activity test result: CM
+Inhibit: Yes
+SMILES: COC(=O)C(Cc1c[nH]c2ccccc12)NP(=O)(O)OCC1C=CC(n2cc(C)c(=O)[nH]c2=O)O1.N
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COC(=O)CCCCCCCCCCCc3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COC(=O)CCCCCCCCCCOc3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COC(=O)CCCCCCCCCCCOc3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC(=O)C(Cc1ccccc1)NC(=O)OCC1OC(n2cc(C)c(=O)[nH]c2=O)CC1N=[N+]=[N-]
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(Cc1ccccc1)NP(=O)(O)OCC1OC(n2cc(F)c(=O)[nH]c2=O)CC1O
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(Cc1ccccc1)NP(=O)(O)OCC1OC(n2cc(Br)c(=O)[nH]c2=O)CC1O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COC(=O)CCCCCCCCCc3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1cn(C2CCC(COP(=O)(OCC(=O)c3ccccc3)OCC(=O)c3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1cn(C2C=CC(COP(=O)(OCC(=O)c3ccccc3)OCC(=O)c3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COP(=O)(OCC(=O)c3ccco3)OCC(=O)c3ccco3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cn(C2OC(COC(=O)c3ccccc3)C(OC(=O)c3ccccc3)C2I)c(=O)[nH]c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(C2CC(O[Si](C)(C)C(C)(C)C)C(CN(OC(=O)Oc3ccccc3)C(=O)Oc3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: N=c1ccn(C2OC(COC(=O)c3ccccc3)C(OC(=O)c3ccccc3)C2I)c(=O)[nH]1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COP(=O)(OCC(=O)c3ccccc3)OCC(=O)c3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1c2ccccc2n[c-](CCl)[n+]1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CSC[c-]1nc2ccccc2c(C)[n+]1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1c2ccccc2n[c-](C)[n+]1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1c2ccccc2n[c-](CSCCC(C)C)[n+]1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCCCCCSC[c-]1nc2ccccc2c(C)[n+]1=O
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1c2ccccc2n[c-](CSC#N)[n+]1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCSC[c-]1nc2ccccc2c(C)[n+]1=O
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=[N+]([O-])c1ccc(SSc2ccc([N+](=O)[O-])cc2[N+](=O)[O-])c([N+](=O)[O-])c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1ccccc1SSc1ccccc1[N+](=O)[O-]
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)Cc1ccc(SSc2ccc(CC(=O)O)cc2)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=C(O)c1ccccc1SSc1ccccc1C(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCCCCCCCCC(=O)Nc1ccc(SSc2ccc(NC(=O)CCCCCCCCCCC)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Clc1ccc(Cl)c(SSc2cc(Cl)ccc2Cl)c1
+Activity test result: CI
+Inhibit: No
+SMILES: NNC(=O)c1ccccc1SSc1ccccc1C(=O)NN
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=[N+]([O-])c1cc(S(=O)(=O)c2ccc(Cl)c([N+](=O)[O-])c2)ccc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccc(S(=O)(=O)c2ccc(N)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1cccc(S(=O)(=O)c2ccc(F)c([N+](=O)[O-])c2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=CNc1ccc(S(=O)(=O)c2ccc([N+](=O)[O-])cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1cccc(S(=O)(=O)c2cccc([N+](=O)[O-])c2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1ccc(S(=O)(=O)c2ccc([N+](=O)[O-])cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CNc1cc(Cl)ccc1S(=O)(=O)c1ccccc1[N+](=O)[O-]
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COc1ccccc1OS(=O)(=O)c1ccc(C)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc(OS(=O)(=O)c2ccccc2[N+](=O)[O-])cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=[N+]([O-])c1ccccc1S(=O)(=O)Oc1ccc(Cl)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=[N+]([O-])c1ccccc1OS(=O)(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc(S(=O)(=O)O[IH2](C#CC(C)(C)C)c2ccccc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1cc(S(=O)(=O)c2ccc(Cl)c([N+](=O)[O-])c2)ccc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1ccccc1S(=O)(=O)Oc1ccccc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Sc1cnnc2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc2nncc(Cl)c2cc1OC
+Activity test result: CI
+Inhibit: No
+SMILES: CSc1cnnc2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc2nncc(SC)c2cc1OC
+Activity test result: CI
+Inhibit: No
+SMILES: Oc1cnnc2ccc(F)cc12
+Activity test result: CI
+Inhibit: No
+SMILES: Sc1ccc2nncc(S)c2c1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc2nncc(S)c2cc1OC
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: OCC1OC(n2cnc3c(Cl)ncnc32)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ncnc2c1ncn2C1OC(COP(=O)(O)O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: OCC1OC(n2cnc3cncnc32)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)Nc1nc(Cl)c2ncn(C3CCCO3)c2n1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1nc(S)c2ncn(C3CC(O)C(CO)O3)c2n1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1nc(Cl)nc2c1ncn2C1CC(O)C(CO)O1
+Activity test result: CI
+Inhibit: No
+SMILES: CNc1ncnc2c1ncn2C1OC(CO)CC1F
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCCC(O)C1(CC)CC(C)C(O)(C2(C)CC(C)C(C(CC)C(=O)C(C)C(O)C(C)C3OC(O)(C(CC)C(=O)O)C(C)C(O)C3CC)O2)O1
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=C(CCC(=O)OCC1OC(O)(CC2OC(CO)C(O)C(O)C2O)C(O)C1O)OCc1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: N#CC(OC1OC(COC2OC(CO)C(O)C(O)C2O)C(O)C(O)C1O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCCCCCCCC(OC(C)=O)C1CCC(C2CCC(C(O)CC#CC=CCCCCCCCC3(Sc4ccccc4)CC(C)OC3=O)O2)O1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(CC(=O)OCc1ccccc1)OC1OC(COC(=O)C(C)(C)C)C(OC(=O)C(C)(C)C)C(OC(=O)C(C)(C)C)C1OC(=O)C(C)(C)C
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1(NC(=O)C(Cc2ccccc2)N(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C)CCCC1
+Activity test result: CI
+Inhibit: No
+SMILES: CCC(C(=O)C(C)C(O)C(C)CCc1ccc(C)c(O)c1C(=O)O)C1OC(CC)(C2CCC(O)(CC)C(C)O2)CC1C
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COC(=O)CCCCCCCCCCOc3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COC(=O)CCCCCCCCCCCOc3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COC(=O)CCCCCCCCCCCc3ccccc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: COC(=O)C(Cc1ccccc1)NC(=O)OCC1OC(n2cc(C)c(=O)[nH]c2=O)CC1N=[N+]=[N-]
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(Cc1ccccc1)NP(=O)(O)OCC1OC(n2cc(F)c(=O)[nH]c2=O)CC1O
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(Cc1ccccc1)NP(=O)(O)OCC1OC(n2cc(Br)c(=O)[nH]c2=O)CC1O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(C2CC(N=[N+]=[N-])C(COC(=O)CCCCCCCCCCOc3ccc(I)cc3)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=c1ccn(C2CC(O)C(CO)O2)c(=O)[nH]1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)C1OC(n2cc([N+](=O)[O-])c(=O)[nH]c2=O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)OCC1OC(n2cc(C(F)(F)F)c(=O)[nH]c2=O)CC1OC(C)=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(C2CC(F)C(CO)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=c1[nH]c(=O)n(C2OC(CO)C(O)C2O)cc1F
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1[nH]c(=O)n(C2CCCO2)cc1F
+Activity test result: CI
+Inhibit: No
+SMILES: CCSCCCCCCCCCCCC(=O)OCC1OC(n2cc(C)c(=O)[nH]c2=O)CC1F
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: N=C(N)SCc1c2ccccc2c(CSC(=N)N)c2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1c2ccccc2c(CSC(=N)N)c2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1c2ccccc2c(CSCC(N)C(=O)O)c2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1c2ccccc2c(CSCCC(N)C(=O)O)c2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: O=S(=O)(CC#CCO)c1c2ccccc2cc2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: Cl.NCCCN(CCCN)CCCNCc1c2ccccc2c(CNCCCN(CCCN)CCCN)c2ccccc12
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cl.NCCNCCNCc1c2ccccc2c(CNCCNCCN)c2ccccc12
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CN1C(=O)c2ccccc2Sc2ccccc21
+Activity test result: CM
+Inhibit: Yes
+SMILES: N=C1Nc2ccccc2Sc2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)CCCN1c2ccccc2Sc2ccc(Cl)cc21
+Activity test result: CI
+Inhibit: No
+SMILES: CC(O)CN1c2ccccc2Sc2ccc(Cl)cc21
+Activity test result: CI
+Inhibit: No
+SMILES: CC(Cl)CN1c2ccccc2Sc2ccc(Cl)cc21
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)N1c2ccccc2Sc2cc(C(O)(C(F)(F)F)C(F)(F)F)ccc21
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1Nc2ccccc2Sc2ccccc21
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC(C)CCCC(C)C1CCC2C3CCC4CC(CCC=C(c5cc(Cl)c(OCc6ccc([N+](=O)[O-])cc6)c(C(=O)O)c5)c5cc(Cl)c(OCc6ccc([N+](=O)[O-])cc6)c(C(=O)O)c5)CCC4(C)C3CCC12C
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)CCCC(C)C1CCC2C3CCC4CC(CCC=C(c5cc(Cl)c(OCc6ccc(C(=O)O)cc6)c(C(=O)O)c5)c5cc(Cl)c(OCc6ccc(C(=O)O)cc6)c(C(=O)O)c5)CCC4(C)C3CCC12C.[NaH]
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(C)CCCC(C)C1CCC2C3CCC4CC(CCC=C(c5cc(Cl)c(OCc6ccc(C(=O)O)cc6)c(C(=O)O)c5)c5cc(Cl)c(OCc6ccc(C(=O)O)cc6)c(C(=O)O)c5)CCC4(C)C3CCC12C
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC(C)CCCC(C)C1CCC2C3CCC4CC(CCC=C(c5cc(Cl)c(OCc6cccc([N+](=O)[O-])c6)c(C(=O)O)c5)c5cc(Cl)c(OCc6cccc([N+](=O)[O-])c6)c(C(=O)O)c5)CCC4(C)C3CCC12C
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)CCCC(C)C1CCC2C3CCC4CC(CCC=C(c5cc(Cl)c(OCc6ccccc6[N+](=O)[O-])c(C(=O)O)c5)c5cc(Cl)c(OCc6ccccc6[N+](=O)[O-])c(C(=O)O)c5)CCC4(C)C3CCC12C
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)CCCC(C)C1CCC2C3CCC4CC(CCC=C(c5cc(Cl)c(OCc6ccccc6[N+](=O)[O-])c(C(=O)O)c5)c5cc(Cl)c(OCc6ccccc6[N+](=O)[O-])c(C(=O)O)c5)CCC4(C)C3CCC12C.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: CC(C)CCCC(C)C1CCC2C3CCC4CC(CCC=C(c5cc(Cl)c(OCc6cccc(C(=O)O)c6)c(C(=O)O)c5)c5cc(Cl)c(OCc6cccc(C(=O)O)c6)c(C(=O)O)c5)CCC4(C)C3CCC12C.[NaH]
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCN(CC)CC(C)=C(c1ccccc1)c1ccccc1S(N)(=O)=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)C(=C=C=C(c1ccccc1)c1ccccc1)C(=O)OCC
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])C(=C(c1ccccc1)c1ccccc1)[N+](=O)[O-]
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])C=C(c1ccc(Cl)cc1)c1ccc(Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C(=C[N+](=O)[O-])c2ccc(OC)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C(=C(C#N)C#N)c2ccc(OC)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCCCCCCCCCCCCC=C(c1cc(Cl)c(O)c(C(=O)O)c1)c1cc(Cl)c(O)c(C(=O)O)c1.N
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=C(Nc1ccccc1)c1cc(S(=O)(=O)N2CCNNC2=O)c(S)cc1Cl
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1ccc(NC(=O)c2cc(S(=O)(=O)N3CCNNC3=O)c(S)cc2Cl)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=C(Nc1ccccc1)c1cc(S(=O)(=O)N2CCNC2=O)c(S)cc1Cl
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1ccc(NC(=O)c2cc(S(=O)(=O)n3cc[nH]c3=O)c(S)cc2Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1ccccc1)c1cc(S(=O)(=O)n2cc[nH]c2=O)c(S)cc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: CSc1cc(Cl)c(C(=O)Nc2ccccc2)cc1S(=O)(=O)n1cc[nH]c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1ccc(Cl)cc1)c1cc(S(=O)(=O)N2CCNNC2=O)c(S)cc1Cl
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COc1ccc2c(c1)OCC1c3cc(O)c(OCc4ccccc4)cc3OC21
+Activity test result: CA
+Inhibit: Yes
+SMILES: COc1ccc2c(c1)OCC1c3ccc(OCc4ccccc4)cc3OC21
+Activity test result: CM
+Inhibit: Yes
+SMILES: COc1ccc2c(c1)OCC1(C)c3cc(O)c(OCc4ccccc4)cc3OC21
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc2c(c1)OCC1c3cc(O)c(OCc4ccccc4)cc3OC21C
+Activity test result: CI
+Inhibit: No
+SMILES: CCN(CC)c1cc(OCc2ccccc2)cc2c1C1COc3cc(OC)ccc3C1O2.Cl
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc2c(c1)OC(C)(C)C1c3cc(O)c(OCc4ccccc4)cc3OC21
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc2c(c1)OCC1c3cc(OC)c(OCc4ccccc4)cc3OC21
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: NS(=O)(=O)c1ccc(NC(=O)c2ccccc2SSc2ccccc2C(=O)Nc2ccc(S(N)(=O)=O)cc2)cc1
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=C(NNC(=O)c1cccc(C(=O)NNC(=O)c2ccc(Cl)c(Cl)c2)n1)c1ccc(Cl)c(Cl)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(NN=Cc1ccc(Cl)cc1Cl)c1ccccc1SSc1ccccc1C(=O)NN=Cc1ccc(Cl)cc1Cl
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1nc(C)c(C(=O)NNC(=O)c2ccccc2)cc1C(=O)NNC(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC1=C(C(=O)NNC(=O)c2ccccc2)CC(C(=O)NNC(=O)c2ccccc2)=C(C)N1
+Activity test result: CI
+Inhibit: No
+SMILES: CC1=C(C(=O)NNC(=O)c2ccccc2O)CC(C(=O)NNC(=O)c2ccccc2O)=C(C)N1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(NNC(=O)c1ccccc1SSc1ccccc1C(=O)NNC(=O)c1ccccc1S)c1ccccc1S
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCCCCCCCCCCCCCCC(=O)OCC1OC(n2ccc(=N)[nH]c2=O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: N=c1ccn(C2OC(CO)C(O)C2O)c(=O)[nH]1
+Activity test result: CI
+Inhibit: No
+SMILES: N=c1ccn(C2OC(CO)C(O)C2Br)c(=O)[nH]1
+Activity test result: CI
+Inhibit: No
+SMILES: N=c1[nH]c(=O)n(C2OC(CO)C(O)C2Cl)cc1I
+Activity test result: CI
+Inhibit: No
+SMILES: N=c1[nH]c(=O)n(C2CCC(CO)O2)cc1F
+Activity test result: CA
+Inhibit: Yes
+SMILES: N=c1ccn(C2CC(F)C(CO)O2)c(=O)[nH]1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC1(CO)CCC(n2ccc(=N)[nH]c2=O)O1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1nn(C(=O)c2ccncc2)c2c1C(c1ccccc1O)SC(=N)N2
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(C2SC(=N)Nc3c2c(C)nn3C(=O)c2ccncc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nn(C(=O)c2ccncc2)c2c1C(c1ccc(Cl)cc1)SC(=N)N2
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nn(C(=O)c2ccncc2)c2c1C(c1ccc([N+](=O)[O-])cc1)SC(=N)N2
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nn(C(=O)c2ccncc2)c2c1C(c1ccccc1[N+](=O)[O-])SC(=N)N2
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nn(C(=O)c2ccncc2)c2c1C(c1cccc([N+](=O)[O-])c1)SC(=N)N2
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nn(C(=O)c2ccncc2)c2c1C(c1ccccc1)SC(=N)N2
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=[N+]([O-])c1cc(S(=O)(=O)c2ccc(Cl)c([N+](=O)[O-])c2)ccc1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccc(S(=O)(=O)c2ccc(N)cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1cccc(S(=O)(=O)c2ccc(F)c([N+](=O)[O-])c2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=CNc1ccc(S(=O)(=O)c2ccc([N+](=O)[O-])cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1cccc(S(=O)(=O)c2cccc([N+](=O)[O-])c2)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=[N+]([O-])c1ccc(S(=O)(=O)c2ccc([N+](=O)[O-])cc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCNc1ccccc1S(=O)(=O)c1ccccc1[N+](=O)[O-]
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=C1Nc2cnc(Cl)nc2Nc2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1Nc2cnc(Cl)nc2Nc2cc(Cl)ccc21
+Activity test result: CI
+Inhibit: No
+SMILES: CN1c2ccccc2C(=O)Nc2cnc(Cl)nc21
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nc(Cl)nc2c1C(=O)Nc1ccccc1N2
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nc(NC(C)(CO)CO)nc2c1C(=O)Nc1ccccc1N2
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nc(N(CCO)CCO)nc2c1C(=O)Nc1ccccc1N2
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1Nc2cnc(Cl)nc2Nc2ccc(Cl)cc21
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CN(C)C1C(O)=C(C(=O)NCN2CCOB(c3ccccc3)OCC2)C(=O)C2(O)C(O)=C3C(=O)C4C(O)=CC=CC4C(C)(O)C3CC12
+Activity test result: CM
+Inhibit: Yes
+SMILES: CN(C)C1C(O)=C(C(=O)NCN2CCCC2)C(=O)C2(O)C(O)=C3C(=O)c4c(O)cccc4C(C)(O)C3CC12
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)C1C(O)=C(C(=O)NCN2CCN(C(=N)NC(=N)N)CC2)C(=O)C2(O)C(O)=C3C(=O)c4c(O)cccc4C(C)(O)C3CC12
+Activity test result: CI
+Inhibit: No
+SMILES: CC1C[N+]2(CNC(=O)C3=C(O)C(N(C)C)C4CC5C(=C(O)C4(O)C3=O)C(=O)c3c(O)cccc3C5(C)O)CC(C)O[B-]2(c2ccccc2)O1
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)C1C(O)=C(C(=O)NC[N+]23CCO[B-]2(c2ccc(Cl)cc2)OCC3)C(=O)C2(O)C(O)=C3C(=O)c4c(O)cccc4C(C)(O)C3CC12
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccccc1[B-]12OCC[N+]1(CNC(=O)C1=C(O)C(N(C)C)C3CC4C(=C(O)C3(O)C1=O)C(=O)c1c(O)cccc1C4(C)O)CCO2
+Activity test result: CI
+Inhibit: No
+SMILES: CC1COB(c2ccccc2)OCC(C)N1CNC(=O)C1=C(O)C(N(C)C)C2CC3C(=C(O)C2(O)C1=O)C(=O)C1C(O)=CC=CC1C3(C)O
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=c1c(O)c(-c2ccc(O)c(O)c2)oc2cc(O)cc(O)c12
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(-c2oc3ccc(C)cc3c(=O)c2O)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1cc(-c2ccccc2)oc2ccccc12
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1c(O)c(-c2ccc(O)cc2O)oc2cc(O)cc(O)c12
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc(O)c2c(=O)c(O)c(-c3ccc(O)c(O)c3)oc2c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1cc(-c2ccccc2)oc2ccc(O)cc12
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc(-c2cc(=O)c3c(C)cc(O)cc3o2)cc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1nn(C(=O)Cc2ccccc2)c2c1C(c1ccccc1)SC(=N)N2
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1nn(C(=O)Cc2ccccc2)c2c1C(c1ccccc1O)SC(=N)N2
+Activity test result: CM
+Inhibit: Yes
+SMILES: COc1ccc(C2SC(=N)Nc3c2c(C)nn3C(=O)Cc2ccccc2)cc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1nn(C(=O)Cc2ccccc2)c2c1C(c1ccc(Cl)cc1)SC(=N)N2
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1nn(C(=O)Cc2ccccc2)c2c1C(c1ccc([N+](=O)[O-])cc1)SC(=N)N2
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1nn(C(=O)Cc2ccccc2)c2c1C(c1ccc(O)cc1)SC(=N)N2
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cc1nn(C(=O)Cc2ccccc2)c2c1C(c1ccc(N(C)C)cc1)SC(=N)N2
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC12CCC(O)CC1=CCC1C2CCC2(C)C1CCC2N(CCO)CCO
+Activity test result: CI
+Inhibit: No
+SMILES: CC12CCCC1C1CC=C3CC(S)CCC3(C)C1CC2
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)CCCC(C)C1CCC2C3CC([N+](=O)[O-])=C4CC(O)CCC4(C)C3CCC12C
+Activity test result: CI
+Inhibit: No
+SMILES: CCC1(O)CCC2C3CC=C4CCCCC4C3CCC21C
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)OC1CC2(C)C(C(C)=O)CCC2C2CC=C3CC(O)CCC3(C)C12
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)CCCC(C)C1CCC2C3CC=C4CC(OC(=O)CCC(=O)O)CCC4(C)C3CCC12C
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)CCCC(C)C1CCC2C3CC=C4CC(OS(=O)(=O)O)CCC4(C)C3CCC12C.[NaH]
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cn1cc(NC(=O)c2cc([N+](=O)[O-])cn2C)cc1C(=O)Nc1cc(S(=O)(=O)O)c2cc(S(=O)(=O)O)cc(S(=O)(=O)O)c2c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cl.Cn1cc(N)cc1C(=O)Nc1cc(C(=O)Nc2cc(S(=O)(=O)O)c3cc(S(=O)(=O)O)cc(S(=O)(=O)O)c3c2)n(C)c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cl.Cn1nc(NC(=O)c2cc(=N)[nH]n2C)cc1C(=O)Nc1ccc2cc(S(=O)(=O)O)cc(S(=O)(=O)O)c2c1.[KH]
+Activity test result: CI
+Inhibit: No
+SMILES: Cn1cc([N+](=O)[O-])cc1C(=O)Nc1cc(C(=O)Nc2ccc(S(=O)(=O)O)c3cc(S(=O)(=O)O)ccc23)n(C)c1.[NaH]
+Activity test result: CI
+Inhibit: No
+SMILES: Cl.Cn1cc(N)cc1C(=O)Nc1cc(C(=O)Nc2ccc(S(=O)(=O)O)c3cc(S(=O)(=O)O)ccc23)n(C)c1.[NaH]
+Activity test result: CM
+Inhibit: Yes
+SMILES: Cl.Cn1cc(NC(=O)c2cc(=N)[nH]n2C)cc1C(=O)Nc1ccc2cc(S(=O)(=O)O)cc(S(=O)(=O)O)c2c1.[KH]
+Activity test result: CI
+Inhibit: No
+SMILES: Cl.Cn1cc(N)cc1C(=O)Nc1cc(C(=O)Nc2ccc3cc(S(=O)(=O)O)cc(S(=O)(=O)O)c3c2)n(C)n1.[KH]
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC(C)=CC(=O)N1CC(C)Cn2c(=S)[nH]c3cccc1c32
+Activity test result: CI
+Inhibit: No
+SMILES: CC1CNc2cccc3[nH]c(=S)n(c23)C1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)=CCN1CC(C)Cn2c(=S)[nH]c3cccc1c32
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCN1c2cc(Br)cc3[nH]c(=S)n(c23)CCC1C
+Activity test result: CA
+Inhibit: Yes
+SMILES: CC1CCn2c(=S)[nH]c3cccc(c32)N1
+Activity test result: CM
+Inhibit: Yes
+SMILES: CC(C)=CCN1CCCn2c(=S)[nH]c3cccc(c32)C1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCN1CC(C)Cn2c(=S)[nH]c3cc(Br)cc1c32
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: OCC1OC(n2cnc3c(Cl)ncnc32)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ncnc2c1ncn2C1OC(COP(=O)(O)O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: OCC1OC(n2cnc3cncnc32)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)Nc1nc(Cl)c2ncn(C3CCCO3)c2n1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1nc(S)c2ncn(C3CC(O)C(CO)O3)c2n1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1nc(Cl)nc2c1ncn2C1CC(O)C(CO)O1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1nc(O)c2ncn(C3OC(CO)CC3F)c2n1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=C1CC2C(c3ccc(Br)cc3)C3C(=O)c4ccccc4NC(=O)C3C2(O)c2ccccc2N1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1c2ccccc2NC(=O)C2C1C(c1ccccc1)CC2(O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CC(C(CC(=O)c2ccccc2)c2ccccc2)C(=O)c2ccccc2N1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCN1C(=O)C2C(C1=O)C(c1ccccc1O)C2c1ccccc1O
+Activity test result: CI
+Inhibit: No
+SMILES: CCN1C(=O)C(N=[N+]=[N-])(c2ccccc2)C(=O)c2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc2c(c1)NC(=O)C(N=[N+]=[N-])(c1ccccc1)C2=O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CC2C(c3ccccc3)C3C(=O)c4ccccc4NC(=O)C3C2(O)c2ccccc2N1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: N#CC(C#N)=CNC(=S)Nc1ccc(S(=O)(=O)Nc2nccs2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccc(S(=O)(=O)Nc2nccs2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)Nc1ccc(S(=O)(=O)c2nnc(NC(C)=O)s2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc(S(=O)(=O)c2ccsc2NC(=O)C(F)(F)F)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1sccc1S(=O)(=O)c1ccc(Cl)cc1)C(F)(F)F
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)Nc1sccc1S(=O)(=O)c1ccc(Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=S(=O)(c1ccccc1)c1nccs1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=C(Nc1ccc(Br)cc1)c1cc(Br)ccc1O
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C(=O)c1ccccc1S)c1ccccc1
+Activity test result: CM
+Inhibit: Yes
+SMILES: O=C(Nc1ccc(O)c(C(=O)O)c1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1cccc(C(F)(F)F)c1)c1cc(Br)cc(Br)c1O
+Activity test result: CI
+Inhibit: No
+SMILES: N#Cc1ccc(N(O)C(=O)c2ccccc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccc(C(=O)Nc2ccccc2N)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(Nc1ccccc1S)c1ccccc1
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=S(=O)(O)c1cc(N=Nc2cc(S(=O)(=O)O)c3cccnc3c2O)ccc1C=Cc1ccc(N=Nc2cc(S(=O)(=O)O)c3cccnc3c2O)cc1S(=O)(=O)O.[NaH]
+Activity test result: CA
+Inhibit: Yes
+SMILES: Nc1c(N=Nc2ccc(C=Cc3ccc(N=Nc4cc(S(=O)(=O)O)c5cccnc5c4N)cc3S(=O)(=O)O)c(S(=O)(=O)O)c2)cc(S(=O)(=O)O)c2cccnc12.[NaH]
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)c1cc(O)c2ccc(N=Nc3ccc(C=Cc4ccc(N=Nc5ccc6c(O)cc(C(=O)O)nc6c5O)cc4S(=O)(=O)O)c(S(=O)(=O)O)c3)c(O)c2n1.[NaH]
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=S(=O)(O)c1cc(N=Nc2cc(S(=O)(=O)O)c3cccnc3c2O)ccc1C=Cc1ccc(N=Nc2cc(S(=O)(=O)O)c3cccnc3c2O)cc1S(=O)(=O)O.[Cu].[NaH]
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=S(=O)(O)c1cc(N=Nc2cc(S(=O)(=O)O)c3cccnc3c2O)ccc1C=Cc1ccc(N=Nc2cc(S(=O)(=O)O)c3cccnc3c2O)cc1S(=O)(=O)O.[MgH2].[NaH]
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=S(=O)(O)c1cc(N=Nc2cc(S(=O)(=O)O)c3cccnc3c2O)ccc1C=Cc1ccc(N=Nc2cc(S(=O)(=O)O)c3cccnc3c2O)cc1S(=O)(=O)O.[NaH].[Zn]
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=S(=O)(O)c1cc(N=Nc2ccc(C=Cc3ccc(N=Nc4cc(S(=O)(=O)O)c5cccnc5c4O)cc3)cc2)c(O)c2ncccc12.[NaH]
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C=C4)OC(C)C(C)C3O
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C=C4)OC(C)C(C)C3OC(C)=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C=C4)OC(C)C(C)C3O[Si](C)(C)C(C)(C)C
+Activity test result: CI
+Inhibit: No
+SMILES: CCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C=C4)OC(C)C(C)C3OC(=O)CCl
+Activity test result: CM
+Inhibit: Yes
+SMILES: CC1Oc2c3c(c4c(CO)cc(=O)oc4c2C(O)C1C)OC(C)(C)C=C3
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C=C4)OC(C)C(C)C3O
+Activity test result: CI
+Inhibit: No
+SMILES: COCc1cc(=O)oc2c3c(c4c(c12)OC(C)(C)C=C4)OC(C)C(C)C3O
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC(=O)O[IH2]1NC(=O)c2ccccc21
+Activity test result: CM
+Inhibit: Yes
+SMILES: [N-]=[N+]=N[IH2]1OC(=O)c2ccccc21
+Activity test result: CM
+Inhibit: Yes
+SMILES: N#C[IH2]1OC(=O)c2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: CCC(=O)N[IH2]1OC(=O)c2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)(C)C#C[IH2]1OC(=O)c2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(C#N)C1NC(=O)c2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: CO[IH2]1NC(=O)c2ccccc21
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1coc(C)c1C(=S)Nc1ccc(Cl)c(C(=O)OC(C)C)c1
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1occc1C(=S)Nc1ccc(Cl)c(C(=O)OCC(C)C)c1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CSCCOC(=O)c1cc(NC(=S)c2ccoc2C)ccc1Cl
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1occc1C(=S)Nc1ccc(Cl)c(C(=O)OCC(F)(F)F)c1
+Activity test result: CA
+Inhibit: Yes
+SMILES: CON=Cc1cc(NC(=S)c2ccoc2C)ccc1Cl
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1occc1C(=S)Nc1ccc(Cl)c(C=NOC(C)C)c1
+Activity test result: CA
+Inhibit: Yes
+SMILES: Cc1occc1C(=S)Nc1ccc(Cl)c(C(=O)OC(C)(C)C)c1
+Activity test result: CA
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1ccc2c(c1)S(=O)c1cc(C)ccc1S2
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)C(C(=O)OCC)=S1c2ccccc2Sc2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: O=S1c2ccccc2SCSc2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: O=S1c2ccccc2-c2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: O=S1c2ccccc2S(=O)c2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc2c(c1)P(=O)(O)c1cc(C)ccc1S2
+Activity test result: CI
+Inhibit: No
+SMILES: O=S1c2ccccc2Sc2ccccc21
+Activity test result: CM
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COC1C(OC(C)=O)C(NC(=O)C(Cl)(Cl)Cl)C(I)C(N2C(=O)c3ccccc3C2=O)C1OC
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(C2CC(N3C(=O)c4ccccc4C3=O)C(CO[Si](C)(C)C(C)(C)C)O2)c(=O)[nH]c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C(N1C(=O)c2ccccc2C1=O)C1(C)CC(Cl)=NO1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CCC(N2C(=O)c3ccccc3C2=O)C(=O)N1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1c2ccccc2C(=O)N1N1CC1Br
+Activity test result: CI
+Inhibit: No
+SMILES: CN=S(=O)(CC1(O)CC2OC1C1OC(C)(C)OC21)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC1(C)OC2C3OC(C(Cl)(Cl)Cl)=NC3C(I)C(N3C(=O)c4ccccc4C3=O)C2O1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCC1=[O+][Cu-3]2([O+]=C(CC)C1)[O+]=C(CC)CC(CC)=[O+]2
+Activity test result: CI
+Inhibit: No
+SMILES: C(=Cc1ccccc1)C1=[O+][Cu-3]2([O+]=C(C=Cc3ccccc3)CC(c3ccccc3)=[O+]2)[O+]=C(c2ccccc2)C1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)N1c2ccccc2Sc2c1ccc1ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccc(C=Cc2ccc(N)cc2S(=O)(=O)O)c(S(=O)(=O)O)c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=S(=O)(O)CCS(=O)(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: CCOP(=O)(Nc1cccc(Cl)c1)OCC
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)OP(=O)(OC(C)C)C(C(F)(F)F)C(F)(F)F
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC(=O)c1cc2c(cc1C(C)C)CCC1C(C)(C#N)CCCC21C
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1(C)CCCC2(C)c3cc(Br)c(C(C)C)cc3CCC12
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1(C)CCCC2(C)c3ccccc3C(OO)CC12
+Activity test result: CI
+Inhibit: No
+SMILES: CC(O)c1ccc2c(c1)C(O)CC1C(C)(CO)CCCC21C
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)c1ccc2c(c1)CCC1C2(C)CCC(O)C1(C)C
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)c1cc2c(cc1S(=O)(=O)O)C1(C)CCCC(C)(C(=O)O)C1CC2
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1(C)CCCC2(C)c3cc(C(C)=O)c(C(C)C)cc3CCC12
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCOC(=S)SC1OC(COC(C)=O)C(OC(C)=O)C(OC(C)=O)C1OC(C)=O
+Activity test result: CI
+Inhibit: No
+SMILES: COC1OCC(N)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)NC1C(O)CC(O)(C(=O)O)OC1C(O)C(O)CO
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=N)C(C#N)=NC1OCC(O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: COC1CC(N)C(O)C(CN=[N+]=[N-])O1
+Activity test result: CI
+Inhibit: No
+SMILES: CC[As](CC)SCC1OC(OC(C)=O)C(OC(C)=O)C(OC(C)=O)C1OC(C)=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCCCCCCCCCCCCCOC1OC(COC(C)=O)C(OC(C)=O)C(OC(C)=O)C1O
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=c1ccc2nc3cc(Br)ccc3sc-2c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1ccc2nc3cc(Cl)ccc3sc-2c1
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1c(Br)cc2nc3ccccc3sc-2c1Br
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1c(Cl)cc2nc3ccccc3sc-2c1Cl
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc2nc3c(Cl)cc(=O)cc-3sc2c1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cc(=O)cc2sc3cc(Cl)ccc3nc1-2
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc2nc3c(C)c(Cl)c(=O)cc-3sc2c1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=CCC12CC(=O)OC(C=CC13OCCO3)C2
+Activity test result: CI
+Inhibit: No
+SMILES: C=CCC12CC(C=CC13OCCO3)OC(=O)C2C
+Activity test result: CI
+Inhibit: No
+SMILES: C=CCC12CC(C=CC13OCCO3)OC(O)C2C
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CC2(CC(O)CO)CC(O1)C(I)CC21OCCO1
+Activity test result: CI
+Inhibit: No
+SMILES: O=CCC12CC(=O)OC(C1)C(I)CC21OCCO1
+Activity test result: CI
+Inhibit: No
+SMILES: BrC1=CC2C(C3C=CC2(Br)C32OCCO2)C12OCCO2
+Activity test result: CI
+Inhibit: No
+SMILES: C=CCC12CC(=O)OC(C=CC13OCCO3)C2
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC(C)(C)[Si](C)(C)OCCCCC1CC2(S(=O)(=O)C3=CC=C=C=C3)ON1CC2S(=O)(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC1(C)CC2(S(=O)(=O)c3ccccc3)ON1CC2S(=O)(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC1CC2(S(=O)(=O)c3ccccc3)ON1CC2S(=O)(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=S(=O)(c1ccccc1)C1CN2OC1(S(=O)(=O)c1ccccc1)CC21CCCCC1
+Activity test result: CI
+Inhibit: No
+SMILES: O=S(=O)(c1ccccc1)C1CN2OC1(S(=O)(=O)c1ccccc1)CC2c1ccc(Br)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)(C)[Si](C)(C)OCCc1ccccc1C1CC2(S(=O)(=O)c3ccccc3)ON1CC2S(=O)(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(C)(C)[Si](C)(C)OCCC1CC2(S(=O)(=O)C3=CC=C=C=C3)ON1CC2S(=O)(=O)c1ccccc1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCc1n[nH]c(=O)n1N1C(=O)CCC1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1n[nH]c(=O)n1N1C(=O)CCCC1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)c1nc(N(C)C)nc(N2C(=O)CCC2=O)n1
+Activity test result: CI
+Inhibit: No
+SMILES: CC1C(=O)N2C(=O)C(C)C(C)C(=O)N2C(=O)C1C
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CCC(=O)N1N1C(=O)CCC1=O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1CCC(=O)N1n1c(Cc2ccccc2)n[nH]c1=O
+Activity test result: CI
+Inhibit: No
+SMILES: CCc1nnc(CC)n1N1C(=O)CCC1=O
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CN1CCCC(OC(=O)C(O)(C#Cc2ccccc2)c2ccccc2)C1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(OC1CN2CCC1CC2)C(O)(C#Cc1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CN1CCC(OC(=O)C(O)(c2ccccc2)c2ccns2)CC1
+Activity test result: CI
+Inhibit: No
+SMILES: CN1CCC(OC(=O)C(O)(c2ccccc2)c2cccc3c2OC(C)(C)C3)CC1
+Activity test result: CI
+Inhibit: No
+SMILES: CN1CCC(OC(c2ccccc2)c2ccc(Cl)cc2)C1.O=C(O)C=CC(=O)O
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1C(OC(=O)C(Cl)(c2ccccc2)c2ccccc2)CC2CCC1N2C.Cl
+Activity test result: CI
+Inhibit: No
+SMILES: CN1CCC(OC(=O)C(O)(C#Cc2ccccc2)c2ccccc2)CC1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CN(C)c1ccc(C=C2C=Cc3ccccc32)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCN(CCCC)c1ccc(C=C2C=Cc3ccccc32)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CNc1ccc(C=C2C=Cc3ccccc32)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)Nc1ccc(C=C2C=Cc3ccccc32)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc(N(C)C)c(OC)cc1C=C1C=Cc2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cc(OC)c(OC)cc1C=C1C=Cc2ccccc21
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1c(Br)cc(C=C2C=Cc3ccccc32)cc1Br
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CSc1nc(NC(=O)c2ccc([N+](=O)[O-])cc2)c(C(=O)NC(C)C)s1
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)c1sc(SC)nc1NC(=O)c1ccc([N+](=O)[O-])cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)c1sc(SC)nc1NC(=O)c1ccc(Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)c1sc(SC)nc1NC(=O)c1ccc(OC)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)c1sc(SC)nc1NC(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: N#Cc1nc(NC(=O)c2ccccc2)sc1N
+Activity test result: CI
+Inhibit: No
+SMILES: CCCNC(=O)c1sc(SC)nc1NC(=O)c1ccc(OC)cc1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COc1ccc2c(c1)C(=O)C13CC(C(=O)N(C)C)C(OC(C)=O)(CCC21)C3
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1CC23CC1(OC(C)=O)CCC2c1ccc(OC)cc1C3=O
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1(C)CCCC2(C)c3ccc(C(C)C)cc3C(=O)CC12
+Activity test result: CI
+Inhibit: No
+SMILES: C=C(C)c1ccc2c(c1)C(=O)CC1C(C)(C#N)CCCC21C
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)OC(C)(C)c1ccc2c(c1)C(=O)CC1C(C)(C#N)CCCC21C
+Activity test result: CI
+Inhibit: No
+SMILES: COC(=O)C1(C)CCCC2(C)c3ccc(C(C)C)cc3C(=O)C(Br)C12
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc2c(c1)C(=O)C13CC(C(=O)O)C(OC(C)=O)(CCC21)C3
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC(=NNC(=S)N1CC2CCC(CC2)C1)c1cccc(C)n1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCC(=NNC(=S)N1CC2CCC(CC2)C1)c1ccccn1
+Activity test result: CI
+Inhibit: No
+SMILES: S=C(NN=Cc1ccccn1)N1CC2CCC(CC2)C1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=NNC(=S)N1CC2CCC(CC2)C1)c1nccs1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=NNC(=S)N1CC2CCC(CC2)C1)c1cnccn1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=NNC(=[Se])N1CC2CCC(CC2)C1)c1ccccn1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=NNC(=S)N1CC2CCC(CC2)C1)c1cccc[n+]1[O-]
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1c(C)c2c(c(N)c1C#N)C(=O)N(CCc1ccccc1)C2=O
+Activity test result: CI
+Inhibit: No
+SMILES: O=C1c2ccccc2C(=O)N1Cc1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccccc1CN1C(=O)c2ccccc2C1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Nc1ccc([N+](=O)[O-])cc1CN1C(=O)c2ccccc2C1=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1c(C)c2c(c(N)c1C#N)C(=O)N(Cc1ccc(S(N)(=O)=O)cc1)C2=O
+Activity test result: CM
+Inhibit: Yes
+SMILES: CCOC(=O)C=C(CN1C(=O)c2ccccc2C1=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: Cl.Nc1ccc(OCC(O)N2C(=O)c3ccccc3C2=O)cc1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: Cc1nc2c(o1)C(=Nc1ccc(I)cc1)c1ccccc1C2=Nc1ccc(I)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)c1ccc(N=C2C=CC(=O)c3ccccc32)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCN(CC)c1ccc(N=C2C=CC(=C(C#N)C#N)c3ccccc32)c(C)c1
+Activity test result: CI
+Inhibit: No
+SMILES: CN(C)c1ccc(N=C2C=CC(=C(C#N)C#N)c3ccccc32)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: c1ccc(N=c2sc3ccccc3sc2=Nc2ccccc2)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: S=C1SC(=Nc2ccccc2)C(=Nc2ccccc2)N1c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: Fc1ccc(N=C2C=CC(=Nc3ccc(F)cc3)c3ccccc32)cc1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CC(O)=C[PH](c1ccccc1)(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)C[PH](c1ccccc1)(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)OCC=C(C)C[PH](c1ccccc1)(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: BrCCC[PH](c1ccccc1)(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)CC[PH](c1ccccc1)(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCC(C)[PH](c1ccccc1)(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCC(=O)C[PH](c1ccccc1)(c1ccccc1)c1ccccc1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: NNC(=O)C(=Cc1ccc(Cl)c(Cl)c1)NC(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: NNC(=O)C(=Cc1cccc([N+](=O)[O-])c1)NC(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: NNC(=O)C(=Cc1ccc(Cl)cc1Cl)NC(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: NNC(=O)C(NC(=O)c1ccccc1)=C(N)c1cccc([N+](=O)[O-])c1
+Activity test result: CI
+Inhibit: No
+SMILES: NNC(=O)C(NC(=O)c1ccccc1)=C(N)c1ccc(Cl)cc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCOC(=O)C(C#N)=C(O)C(=Cc1ccccc1Cl)NC(=O)c1ccccc1
+Activity test result: CI
+Inhibit: No
+SMILES: CCCCNC(=O)C(=Cc1ccc(OC)c(OC)c1)NC(=O)c1ccccc1
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: O=c1ccn(C2CC(O)C(CO)O2)c(=O)[nH]1
+Activity test result: CI
+Inhibit: No
+SMILES: O=C(O)C1OC(n2cc([N+](=O)[O-])c(=O)[nH]c2=O)C(O)C1O
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)OCC1OC(n2cc(C(F)(F)F)c(=O)[nH]c2=O)CC1OC(C)=O
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(C2CC(F)C(CO)O2)c(=O)[nH]c1=O
+Activity test result: CA
+Inhibit: Yes
+SMILES: O=c1[nH]c(=O)n(C2OC(CO)C(O)C2O)cc1F
+Activity test result: CI
+Inhibit: No
+SMILES: O=c1[nH]c(=O)n(C2CCCO2)cc1F
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1cn(C2CC(O)C(COC(=O)CCCCCCCCCCN=[N+]=[N-])O2)c(=O)[nH]c1=O
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: COc1ccc2c(c1)CCC1C3(CCCC21C=O)OCCO3
+Activity test result: CI
+Inhibit: No
+SMILES: COc1cccc2c1C1(O)C2CCCC12OCCCO2
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)OC12c3ccccc3C1CCCC21OCCCO1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1ccc(C)c2c1C1CCCCC3(OCCCO3)C21O
+Activity test result: CI
+Inhibit: No
+SMILES: OC12c3ccccc3C1CCCCCC21OCCCO1
+Activity test result: CI
+Inhibit: No
+SMILES: CC(=O)OC12c3ccccc3C1CCCCCC21OCCCO1
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc2c(c1)CCC1C3(CCCC21C)OCCO3
+Activity test result: CI
+Inhibit:
+
+==================================================
+You are an expert chemist, your task is to predict the property of molecule using your experienced chemical property prediction knowledge. Please strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focuses on predicting molecular properties, specifically inhibit of HIV replication based on the SMILES string representation of each molecule. You will be provided with several examples molecules, each accompanied by a binary label indicating whether a molecule can inhibit (Yes) or cannot inhibit (No) HIV replication. Additionally, the activity test results of the molecules are provided. There are three classes of the activity test: 1). CA: confirmed active, 2). CM: Confirmed moderately active 3.) CI: Confirmed inactive. The task is to precisely predict the binary label for a given molecule and its HIV activity test, considering its properties and its potential to impede HIV replication.
+SMILES: CCN(CC)CCNc1c(OC)c(OC)cc2nccnc12.O=P(O)(O)O
+Activity test result: CI
+Inhibit: No
+SMILES: Sc1nc2ccccc2nc1S
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nc2cc(Cl)cc(N)c2nc1C
+Activity test result: CI
+Inhibit: No
+SMILES: CCc1nc2c(O)ccc(O)c2nc1C
+Activity test result: CI
+Inhibit: No
+SMILES: Oc1nc2ccccc2nc1CBr
+Activity test result: CI
+Inhibit: No
+SMILES: COc1ccc2nc(CI)c(CI)nc2c1
+Activity test result: CI
+Inhibit: No
+SMILES: Cc1nc2c(O)ccc(O)c2nc1C
+Activity test result: CI
+Inhibit:
+
+==================================================
