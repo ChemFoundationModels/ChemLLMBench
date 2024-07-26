@@ -37,7 +37,7 @@ Becuase of the size limit, please download these datasets according to the link.
 | Suzuki-miyaura |[download](https://github.com/seokhokang/reaction_yield_nn/blob/main/data/dataset_2_0.npz)| https://github.com/seokhokang/reaction_yield_nn|
 |Butchward-Hariwig|[download](https://github.com/seokhokang/reaction_yield_nn/blob/main/data/dataset_1_0.npz)|https://github.com/seokhokang/reaction_yield_nn|
 | BBBP,BACE,HIV,Tox21,Clintox| [download](https://github.com/hwwang55/MolR/tree/master/data)|https://github.com/hwwang55/MolR|
-| PubChem | [download](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/name_prediction/pubchem.csv) | https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/name_prediction/pubchem.csv | 
+| PubChem | [download](https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/name_prediction/llm_test.csv) | https://github.com/ChemFoundationModels/ChemLLMBench/blob/main/data/name_prediction/llm_test.csv | 
 
 
 ## 🤗 Cite us 
